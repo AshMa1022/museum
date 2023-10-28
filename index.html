@@ -6,8 +6,11 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="logo.JPG" type="image/x-icon" />
     <script src="menu.js"></script>
+    
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200;400;600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@900&family=Noto+Serif+SC:wght@200;400;600&display=swap');
+
     </style> 
 </head>
 <body>
@@ -24,19 +27,15 @@
 
 
     <main>
-        <!-- <div class="intro">
-            <p>没有我们的文化就没有我们的历史，</p>
-            <p>没有我们的历史就没有我们的将来。</p>
-        </div> -->
 
     <div class ="menu">
         <div class="allChap">
-        <a class ="chap">第一展厅 流动的历史</a>
+        <a class ="chap" href="javascript:void(0);" onclick="loadSecondary()">第一展厅 流动的历史</a>
         <div class ="subChap">
             <a href="javascript:void(0);" 
-            onclick="loadContent(1.1)">[壹] 建国初期 </a>
-
-            <a style ="color:gray">[贰] 农村改革 </a>
+            onclick="loadContent(101)">[壹] 建国初期 </a>
+            <a href="javascript:void(0);" 
+            onclick="loadContent(102)">[贰] 农村改革 </a>
             <a style ="color:gray">[叁] 离土不离乡 </a>
             <a style ="color:gray">[肆] 务工潮出现 </a>
             <a style ="color:gray">[伍] 管理制度 </a>
@@ -44,16 +43,21 @@
             <a style ="color:gray" >[七] NGO诞生 </a>
             <a style ="color:gray">[八] 政策调整 </a>
         </div>
-        <br>
+
+        <hr>
         <a class ="chap" style ="color:gray"">第二展厅 女工展厅</a>
+        <hr>
         <a class ="chap" style ="color:gray">第三展厅 儿童展厅</a>
+        <hr>
         <a class ="chap" style ="color:gray">第四展厅 NGO展厅</a>
+        <hr>
         <a class ="chap" style ="color:gray">第五展厅 劳动展厅</a>
+        <hr>
 
         </div>
 
-            <div class="sec" id = "chap1.1">
-                <p class="return" onclick="returnM()" class="return"> < 农村改革 </p>
+            <div class="sec" id = "chap101">
+                <p class="return" onclick="returnM(101)"> < 建国初期 </p>
                 <p>1-1 新中国建立初期，为有重点地发展国家经济，在人民公社和国有企业稳定之后，
                     国家开始严格控制人口的迁移，城乡二元化结构逐步形成并凝固。</p>
                 <br>
@@ -83,118 +87,214 @@
                 
 
             </div>
+            <div class="sec" id = "chap102">
+                <p class="return" onclick="returnM(102)"> < 农村改革 </p>
+                <p>2-1
+                    改革开放以农村改革为起点，家庭联产承包责任制的推广瓦解了人民公社，大量的农村劳动力开始富余，为后期进城务工潮的出现创造了必要的条件。
+                </p>
+                <br>
+                <p>2-3 1982年1月1日，中共中央批转《全国农村工作会议纪要》。《纪要》指出，目前农村实行的各种责任制，包括小段包工定额计酬，专业承包联产计酬，联产到劳，包产到户、到组，包干到户、到组，等等，都是社会主义集体经济的生产责任制。
+                </p>
+                <br>
+                <p>2-5 农村家庭联产承包责任制
+                    农村家庭联产承包责任制是指农户以家庭为单位向集体组织承包土地等生产资料和生产任务的农业生产责任制形式。其基本特点是在保留集体经济必要的统一经营的同时、集体将土地和其他生产资料承包给农户，承包户根据承包合同规定的权限，独立作出经营决策，并在完成国家和集体任务的前提下分享经营成果。
+                </p>
+                <br>
+                <p>2-8 摘录  党的十一届三中全会以后，在党中央的积极支持和大力倡导下，家庭联产承包责任制逐步在全国推开，到1983年初，全国农村已有93%的生产队实行了这种责任制。                    
+                </p>
+                <br>
+                <p>2-10 摘录     
+                    口号：
+                    留足国家的，交够集体的，剩下都是自己的。
+                </p>
+                <br>
+                <p>2-11 摘录     
+                    中共中央关于加快农业发展若干问题的决定——1979年9月28日
+                    我国农村现在有八亿人口，有三亿劳动力，随着农业现代化的进展，必将有大量农业劳动力可以逐步节省下来，这些劳动力不可能也不必要都进入现有的大、中城市，工业和其他各项建设事业也不可能和不必要都放在这些城市。我们一定要十分注意加强小城镇的建设，逐步用现代工业交通业、现代商业服务业、现代教育科学文化卫生事业把它们武装起来，作为改变全国农村面貌的前进基地。
+                </p>
+            </div>
     </div>
 
 
 
     <div class ="container">
+        <div class="intro">
+            <!-- <p>没有我们的文化就没有我们的历史，</p>
+            <p>没有我们的历史就没有我们的将来。</p> -->
+        </div>
         <div class ="img_gallery">
-  
-            <div class ="item" id="chap1.1"><figure>
+        <div class ="img_gallery101">
+            <div class ="item" id="chap101"><figure>
                 <img src="chap1_img/1-2.png" alt="" >
                 <figcaption>1-2 人民公社宣传画</figcaption>
             </figure></div>
-            <div class ="item" id="chap1.1"><figure>
+            <div class ="item" id="chap101"><figure>
                 <img src="chap1_img/1-3.png">
                 <figcaption>1-4 农村人民公社
                     在高级农业生产社的基础上联合起来组成的劳动群众集体所有制的经济组织。成立初期，生产资料实行单一的公社所有制，在分配上实行过工资制和供给制相结合，并取消了自留地，压缩了社员家庭副业，后经多次调整，1962年以后，绝大多数人民公社实行了“三级所有，队为基础”的制度。
                     </figcaption>
             </figure></div>
-            <div class ="item" id="chap1.1"><figure>
+            <div class ="item" id="chap101"><figure>
                 <img src="chap1_img/1-5.png">
                 <figcaption>1-5 土地房产所有证存根</figcaption>
             </figure></div>
-            <div class ="item" id="chap1.1"><figure>
+            <div class ="item" id="chap101"><figure>
                 <img src="chap1_img/1-6.png">
                 <figcaption>1-6 人民公社成立大会</figcaption>
             </figure></div>
-            <div class ="item" id="chap1.1"><figure>
+            <div class ="item" id="chap101"><figure>
                 <img src="chap1_img/1-8.png">
                 <figcaption>1-8 人民公社食堂</figcaption>
             </figure></div>
-            <div class ="item" id="chap1.1"><figure>
+            <div class ="item" id="chap101"><figure>
                 <img src="chap1_img/1-10.png">
                 <figcaption>1-10 户口本</figcaption>
             </figure></div>
-            <div class ="item" id="chap1.1"><figure>
+            <div class ="item" id="chap101"><figure>
                 <img src="chap1_img/玻璃柜展品1-1-2.png">
                 <figcaption>玻璃柜展品1-1-2</figcaption>
             </figure></div>
-            <div class ="item" id="chap1.1"><figure>
+            <div class ="item" id="chap101"><figure>
                 <img src="chap1_img/玻璃柜展品1-1-3.png">
                 <figcaption>玻璃柜展品1-1-3</figcaption>
             </figure></div>
-            <div class ="item" id="chap1.1"><figure>
+            <div class ="item" id="chap101"><figure>
                 <img src="chap1_img/玻璃柜展品1-1-4.png">
                 <figcaption>玻璃柜展品1-1-4</figcaption>
             </figure></div>
-            <div class ="item" id="chap1.1"><figure>
+            <div class ="item" id="chap101"><figure>
                 <img src="chap1_img/玻璃柜展品1-1-6.jpg">
                 <figcaption>玻璃柜展品1-1-6</figcaption>
             </figure></div>
-            <div class ="item" id="chap1.1"><figure>
+            <div class ="item" id="chap101"><figure>
                 <img src="chap1_img/玻璃柜展品1-1-7.jpg">
                 <figcaption>玻璃柜展品1-1-7</figcaption>
             </figure></div>
-            <div class ="item" id="chap1.1"><figure>
+            <div class ="item" id="chap101"><figure>
                 <img src="chap1_img/玻璃柜展品1-1-8.jpg">
                 <figcaption>玻璃柜展品1-1-8</figcaption>
             </figure></div>
-            <div class ="item" id="chap1.1"><figure>
+            <div class ="item" id="chap101"><figure>
                 <img src="chap1_img/玻璃柜展品1-1-9.jpg">
                 <figcaption>玻璃柜展品1-1-9</figcaption>
             </figure></div>
-            <div class ="item" id="chap1.1"><figure>
+            <div class ="item" id="chap101"><figure>
                 <img src="chap1_img/玻璃柜展品1-2-2.jpg">
                 <figcaption>玻璃柜展品1-2-2</figcaption>
             </figure></div>
-            <div class ="item" id="chap1.1"><figure>
+            <div class ="item" id="chap101"><figure>
                 <img src="chap1_img/玻璃柜展品1-2-3.jpg">
                 <figcaption>玻璃柜展品1-2-3</figcaption>
             </figure></div>
-            <div class ="item" id="chap1.1"><figure>
+            <div class ="item" id="chap101"><figure>
                 <img src="chap1_img/玻璃柜展品1-2-4.jpg">
                 <figcaption>玻璃柜展品1-2-4</figcaption>
             </figure></div>
-            <div class ="item" id="chap1.1"><figure>
+            <div class ="item" id="chap101"><figure>
                 <img src="chap1_img/玻璃柜展品1-2-5.jpg">
                 <figcaption>玻璃柜展品1-2-5</figcaption>
             </figure></div>
-            <div class ="item" id="chap1.1"><figure>
+            <div class ="item" id="chap101"><figure>
                 <img src="chap1_img/玻璃柜展品1-2-6.jpg">
                 <figcaption>玻璃柜展品1-2-6</figcaption>
             </figure></div>
-            <div class ="item" id="chap1.1"><figure>
+            <div class ="item" id="chap101"><figure>
                 <img src="chap1_img/玻璃柜展品1-2-7.jpg">
                 <figcaption>玻璃柜展品1-2-7</figcaption>
             </figure></div>
-            <div class ="item" id="chap1.1"><figure>
+            <div class ="item" id="chap101"><figure>
                 <img src="chap1_img/玻璃柜展品1-2-8.jpg">
                 <figcaption>玻璃柜展品1-2-8</figcaption>
             </figure></div>
-            <div class ="item" id="chap1.1"><figure>
+            <div class ="item" id="chap101"><figure>
                 <img src="chap1_img/玻璃柜展品1-2-9.jpg">
                 <figcaption>玻璃柜展品1-2-9</figcaption>
             </figure></div>
-            <div class ="item" id="chap1.1"><figure>
+            <div class ="item" id="chap101"><figure>
                 <img src="chap1_img/玻璃柜展品1-2-10.jpg">
                 <figcaption>玻璃柜展品1-2-10</figcaption>
             </figure></div>
-            <div class ="item" id="chap1.1"><figure>
+            <div class ="item" id="chap101"><figure>
                 <img src="chap1_img/玻璃柜展品1-2-11.jpg">
                 <figcaption>玻璃柜展品1-2-11</figcaption>
             </figure></div>
 
-            <div id="modal">
-                <span class="close" id="close">&times;</span>
-                <span class="nav" id="prev">&#10094;</span>
-                <img src="" alt="Enlarged Image" id="modal-img">
-                <span class="nav" id="next">&#10095;</span>
-                <div id="caption"></div>
-              </div>
-            
-              <script src="show.js"></script>
+
         </div>
+        <div class="img_gallery102">
+            <div class ="item"><figure>
+                <img src="chap1_img/2-2.JPG" alt="" >
+                <figcaption>1-2 人民公社宣传画</figcaption>
+            </figure></div>
+            <div class ="item"><figure>
+                <img src="chap1_img/2-3.JPG" alt="" >
+                <figcaption>1-2 人民公社宣传画</figcaption>
+            </figure></div>
+            <div class ="item"><figure>
+                <img src="chap1_img/2-4.JPG" alt="" >
+                <figcaption>1-2 人民公社宣传画</figcaption>
+            </figure></div>
+            <div class ="item"><figure>
+                <img src="chap1_img/2-6.JPG" alt="" >
+                <figcaption>1-2 人民公社宣传画</figcaption>
+            </figure></div>
+            <div class ="item"><figure>
+                <img src="chap1_img/2-7.png" alt="" >
+                <figcaption>1-2 人民公社宣传画</figcaption>
+            </figure></div>
+            <div class ="item"><figure>
+                <img src="chap1_img/2-9.png" alt="" >
+                <figcaption>1-2 人民公社宣传画</figcaption>
+            </figure></div>
+            <div class ="item"><figure>
+                <img src="chap1_img/2-12.png" alt="" >
+                <figcaption>1-2 人民公社宣传画</figcaption>
+            </figure></div>
+            <div class ="item"><figure>
+                <img src="chap1_img/玻璃柜展品2-3-1.JPG" alt="" >
+                <figcaption>1-2 人民公社宣传画</figcaption>
+            </figure></div>
+            <div class ="item"><figure>
+                <img src="chap1_img/玻璃柜展品2-3-2.png" alt="" >
+                <figcaption>1-2 人民公社宣传画</figcaption>
+            </figure></div>
+            <div class ="item"><figure>
+                <img src="chap1_img/玻璃柜展品2-3-3.JPG" alt="" >
+                <figcaption>1-2 人民公社宣传画</figcaption>
+            </figure></div>
+            <div class ="item"><figure>
+                <img src="chap1_img/玻璃柜展品2-3-4.png" alt="" >
+                <figcaption>1-2 人民公社宣传画</figcaption>
+            </figure></div>
+            <div class ="item"><figure>
+                <img src="chap1_img/玻璃柜展品2-3-5.JPG" alt="" >
+                <figcaption>1-2 人民公社宣传画</figcaption>
+            </figure></div>
+            <div class ="item"><figure>
+                <img src="chap1_img/玻璃柜展品2-3-6.JPG" alt="" >
+                <figcaption>1-2 人民公社宣传画</figcaption>
+            </figure></div>
+            <div class ="item"><figure>
+                <img src="chap1_img/玻璃柜展品2-3-7.JPG" alt="" >
+                <figcaption>1-2 人民公社宣传画</figcaption>
+            </figure></div>
+            <div class ="item"><figure>
+                <img src="chap1_img/玻璃柜展品2-3-8.JPG" alt="" >
+                <figcaption>1-2 人民公社宣传画</figcaption>
+            </figure></div>
+            
+            
+        </div>
+        <div id="modal">
+            <span class="close" id="close">&times;</span>
+            <span class="nav" id="prev">&#10094;</span>
+            <img src="" alt="Enlarged Image" id="modal-img">
+            <span class="nav" id="next">&#10095;</span>
+            <div id="caption"></div>
+        </div>
+        
+        <script src="show.js"></script>
+    </div>
     </div>
 
     </main>

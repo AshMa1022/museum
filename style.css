@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
 
+@media only screen and (min-width: 768px) {
 body{
     background-color: #f2f2f2;
     font-family:'Noto Serif',serif;
@@ -106,6 +107,7 @@ nav{
 .container{
     float:right;
     margin-left: 300px;
+
 
 
 
@@ -227,4 +229,241 @@ figcaption{
     right: 20rem;
   }
   
+}
+
+
+/*
+
+mobile
+
+*/
+@media only screen and (max-width: 768px) {
+
+  body{
+    background-color: #f2f2f2;
+    font-family:'Noto Serif',serif;
+    padding: 0;
+    margin:0;
+}
+img{
+  display: block;
+}
+
+/* header <- nav */
+.header{
+    position: fixed;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: black;
+    border-bottom-style: solid;
+    width: 100%;
+    height: 5vh;
+    background-color: #f5efe9;
+    z-index: 100;
+    top:0;
+    left:0;
+    padding:0 1rem 0 1rem;
+    margin-right: 3rem;
+    font-size: 1.5vh;
+}
+.header img{
+  max-height: 5vh; 
+}
+
+nav{
+  margin-right: 3rem;
+  align-self:  center;
+}
+
+/* main <-menu, <-sec, <-container*/
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.menu{
+    float:left;
+    width:15%;
+    border-color: black;
+    border-style: solid;
+}
+.menu {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  left: 0;
+  top: 300;
+  background-color: #f5efe9;
+  overflow-x: hidden;
+  padding-top: 3rem;
+}
+
+.menu a {
+  padding: 10px 25px;
+  text-decoration: none;
+  color: #000000;
+  display: block;
+}
+
+.return{
+  font-size: 30px;
+  padding:0;
+  font-weight: 600;
+}
+
+.menu a:hover{
+  color: #e60808;
+}
+.return:hover {
+  color: #e60808;
+}
+
+/*menu <- allChap <- chap <-subchap*/
+      .chap{
+        font-size: 15px;
+        line-height: 20px;
+      }
+      .subChap{
+        padding-left: 2rem;
+        font-size: 15px;
+        display: none;
+        padding-top:-2rem;
+      }
+
+.sec{
+  font-weight: 200;
+  font-size: 15px;
+  margin-bottom: 5rem;
+  margin-left:1rem;
+  margin-right: 1rem;
+  margin-top: -1rem;
+  display: none;
+}
+
+/* container <- .img_gallery <- intro*/
+
+.container{
+    float:right;
+    margin-left: 200px;
+
+
+
+}
+.intro{
+  float: left;
+
+  text-align: center;
+  margin-left: 5rem;
+  width: calc(100vw - 20vh);
+  height: 100vh;
+  background-image: url('/museum/hp_img/entrance.png');
+  background-size:cover;
+}
+.intro img{
+  position: fixed;
+  width: 50%;
+  bottom:0;
+  right:0;
+}
+
+/*img_gallery <-item(=figure)*/
+.img_gallery{
+  margin-left: 1rem;
+    margin-top: 5rem;
+    display: gird;
+    align-items: top;
+    columns:15rem;
+    gap:20px;
+    
+}
+.img_gallery101{
+  display: none;
+}
+.item{
+  block-size: auto;
+  margin-bottom: 15px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+figure{  
+    margin: 0;
+    background-color: #e1dfdf; 
+}
+
+figure img {
+  height:auto;
+  width:100%;
+  object-fit: contain;
+}
+
+figcaption{
+  padding:0rem 0rem .2rem .5em;
+  justify-self: start;
+  font-size: 10px;
+}
+    
+
+  #modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    padding-top: 60px;
+  }
   
+  #modal img {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+    max-height: 80%;
+  }
+  
+  #modal #caption {
+    text-align: center;
+    color: #fff;
+    margin-top: 0;
+    font-size: 20px;
+  }
+  
+  #modal .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #modal .close:hover,
+  #modal .close:focus {
+    color: #ccc;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #prev,
+  #next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  #prev {
+    left: 20rem;
+  }
+  
+  #next {
+    right: 20rem;
+  }
+
+}

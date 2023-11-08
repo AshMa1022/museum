@@ -8,7 +8,9 @@ function loadContent(sectionNumber) {
     //section text
     var sectionId = 'chap' + sectionNumber;
     var newContentDiv = document.getElementById(sectionId);
-    var gallery = document.querySelector('.img_gallery' + sectionNumber);
+    var name = '.img_gallery'+sectionNumber;
+    var gallery = document.querySelector(name);
+    console.log(gallery);
     var intro = document.querySelector('.intro');
     
     if (newContentDiv) {
@@ -21,12 +23,20 @@ function loadContent(sectionNumber) {
 
   function loadSecondary(){
     var sec = document.querySelector(".subChap");
+    sec.classList.add('fade-in');
     if(sec.style.display == 'none'){
+      sec.transform = 'translateX(-40px)';
       sec.style.display = 'block';
     }
     else{
+      sec.transform = 'translateX(-40px)';
       sec.style.display = 'none';
+      
     }
+    setTimeout(function () {
+      sec.classList.add('show');
+      sec.style.transform = 'translateX(0px)';
+    }, 10);
 
   }
 

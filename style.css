@@ -90,6 +90,8 @@ nav{
         font-size: 15px;
         line-height: 7px;
         display: none;
+        opacity: 0;
+        transition: opacity 1s;
       }
 
 .sec{
@@ -140,6 +142,9 @@ nav{
     
 }
 .img_gallery101{
+  display: none;
+}
+.img_gallery102{
   display: none;
 }
 .item{
@@ -227,6 +232,17 @@ figcaption{
   
   #next {
     right: 20rem;
+  }
+
+   .fade-in {
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Add transform transition */
+    transform: translateX(-40px); /* Initialize transform property */
+  }
+  
+  .fade-in.show {
+    opacity: 1;
+    transform: translateX(0px); /* Apply transform when the element has the "show" class */
   }
   
 }
@@ -379,6 +395,9 @@ nav{
 .img_gallery101{
   display: none;
 }
+.img_gallery102{
+  display: none;
+}
 .item{
   block-size: auto;
   margin-bottom: 15px;
@@ -402,7 +421,7 @@ figcaption{
   justify-self: start;
   font-size: 10px;
 }
-    
+
 
   #modal {
     display: none;

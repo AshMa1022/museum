@@ -121,7 +121,7 @@ nav{
   margin-left: 5rem;
   width: calc(100vw - 20vh);
   height: 100vh;
-  background-image: url('/museum/hp_img/entrance.png');
+  background-image: url('/hp_img/entrance.png');
   background-size:cover;
 }
 .intro img{

@@ -1,0 +1,245 @@
+var gal=[
+[
+    //1-1(index 0)
+    {url:"chap1_img/1-2.png",alt:'1-2 人民公社宣传画'},
+    {url:"chap1_img/1-3.png",alt:'1-4 农村人民公社'},
+    {url:'chap1_img/1-5.png',alt:'1-6 人民公社成立大会'},
+    {url:'chap1_img/1-8.png',alt:'1-8 人民公社食堂'},
+    {url:'chap1_img/玻璃柜展品1-1-2.png',alt:'玻璃柜展品1-1-2'},
+    {url:'chap1_img/玻璃柜展品1-1-3.png',alt:'玻璃柜展品1-1-3'},
+    {url:'chap1_img/玻璃柜展品1-1-4.png',alt:'玻璃柜展品1-1-4'},
+    {url:'chap1_img/玻璃柜展品1-1-6.jpg',alt:'玻璃柜展品1-1-6'},
+    {url:'chap1_img/玻璃柜展品1-1-7.jpg',alt:'玻璃柜展品1-1-7'},
+    {url:'chap1_img/玻璃柜展品1-1-8.jpg',alt:'玻璃柜展品1-1-8'},
+    {url:'chap1_img/玻璃柜展品1-1-9.jpg',alt:'玻璃柜展品1-1-9'},
+    {url:'chap1_img/玻璃柜展品1-2-1.jpg',alt:'玻璃柜展品1-2-1'},
+    {url:'chap1_img/玻璃柜展品1-2-2.jpg',alt:'玻璃柜展品1-2-2'},
+    {url:'chap1_img/玻璃柜展品1-2-3.jpg',alt:'玻璃柜展品1-2-3'},
+    {url:'chap1_img/玻璃柜展品1-2-4.jpg',alt:'玻璃柜展品1-2-4'},
+    {url:'chap1_img/玻璃柜展品1-2-5.jpg',alt:'玻璃柜展品1-2-5'},
+    {url:'chap1_img/玻璃柜展品1-2-6.jpg',alt:'玻璃柜展品1-2-6'},
+    {url:'chap1_img/玻璃柜展品1-2-7.jpg',alt:'玻璃柜展品1-2-7'},
+    {url:'chap1_img/玻璃柜展品1-2-8.jpg',alt:'玻璃柜展品1-2-8'},
+    {url:'chap1_img/玻璃柜展品1-2-9.jpg',alt:'玻璃柜展品1-2-9'},
+    {url:'chap1_img/玻璃柜展品1-2-10.jpg',alt:'玻璃柜展品1-2-10'},
+    {url:'chap1_img/玻璃柜展品1-2-11.jpg',alt:'玻璃柜展品1-2-11'},
+    {url:'chap1_img/玻璃柜展品1-2-12.jpg',alt:'玻璃柜展品1-2-12'},
+    {url:'chap1_img/玻璃柜展品1-2-13.jpg',alt:'玻璃柜展品1-2-13'}
+],
+//1-2 (index 1)
+    [{url:"chap1_img/2-2.JPG",alt:'2-2 1978年12月24日，《人民日报》发表中国共产党十一届三中全会公报。'},
+    {url:"chap1_img/2-3.JPG",alt:'2-3 1982年1月1日，中共中央批转《全国农村工作会议纪要》。《纪要》指出，目前农村实行的各种责任制，包括小段包工定额计酬，专业承包联产计酬，联产到劳，包产到户、到组，包干到户、到组，等等，都是社会主义集体经济的生产责任制。'},
+    {url:'chap1_img/2-4.JPG',alt:'2-4 1978年12月，小岗18户农民以“敢为天下先”的胆识，按下了18颗红手印，搞起了“大包干”，揭开了中国农村改革的序幕。'},
+    {url:'chap1_img/2-6.JPG',alt:'2-6 购物票券'},
+    {url:'chap1_img/2-7.png',alt:'2-7 分田到户，立标为界'},
+    {url:'chap1_img/2-9.png',alt:'2-9 林权证'},
+    {url:'chap1_img/2-12.png',alt:'2-12 80年代工厂食堂饭票'},
+    {url:'chap1_img/玻璃柜展品2-3-1.JPG',alt:'玻璃柜展品2-3-1'},
+    {url:'chap1_img/玻璃柜展品2-3-2.png',alt:'玻璃柜展品2-3-2'},
+    {url:'chap1_img/玻璃柜展品2-3-3.JPG',alt:'玻璃柜展品2-3-3'},
+    {url:'chap1_img/玻璃柜展品2-3-4.png',alt:'玻璃柜展品2-3-4'},
+    {url:'chap1_img/玻璃柜展品2-3-5.JPG',alt:'玻璃柜展品2-3-5'},
+    {url:'chap1_img/玻璃柜展品2-3-6.JPG',alt:'玻璃柜展品2-3-6'},
+    {url:'chap1_img/玻璃柜展品2-3-7.JPG',alt:'玻璃柜展品2-3-7'},
+    {url:'chap1_img/玻璃柜展品2-3-8.JPG',alt:'玻璃柜展品2-3-8'}
+    ],
+//1-3 (index 2)
+    [{url:"chap1_img/3-3.png",alt:'3-3乡镇企业工作图'},
+    {url:"chap1_img/3-6.png",alt:'3-6 乡镇企业工作图'},
+    {url:'chap1_img/3-8.png',alt:'3-9 乡镇企业规模 1988年，乡镇企业从业人员达到9495万人，总产值7018亿元，实现利税892亿元，分别比1978年增长235.9%、1323.5%和710.9%。'},
+    {url:'chap1_img/玻璃柜展品 3-4-1.png',alt:'玻璃柜展品 3-4-1'},
+    {url:'chap1_img/玻璃柜展品 3-4-2.png',alt:'玻璃柜展品 3-4-2'},
+    {url:'chap1_img/玻璃柜展品 3-4-3.png',alt:'玻璃柜展品 3-4-3'},
+    {url:'chap1_img/玻璃柜展品 3-4-4.png',alt:'玻璃柜展品 3-4-4'},
+    {url:'chap1_img/玻璃柜展品 3-4-5.png',alt:'玻璃柜展品3-4-5'},
+    {url:'chap1_img/玻璃柜展品 3-4-6.png',alt:'玻璃柜展品3-4-6'},
+    {url:'chap1_img/玻璃柜展品 3-4-7.png',alt:'玻璃柜展品3-4-7'},
+    {url:'chap1_img/玻璃柜展品 3-4-8.png',alt:'玻璃柜展品3-4-8'},
+    {url:'chap1_img/玻璃柜展品 3-4-9.png',alt:'玻璃柜展品3-4-9'},
+    {url:'chap1_img/玻璃柜展品 3-4-10.png',alt:'玻璃柜展品3-4-10'},
+    {url:'chap1_img/玻璃柜展品 3-4-11.png',alt:'玻璃柜展品3-4-11'}
+    ],
+
+//1-4 (index 3)
+    [{url:"chap1_img/4-2.png",alt:' '},
+    {url:"chap1_img/4-3.png",alt:'4-3 东方风来满眼春'},
+    {url:'chap1_img/4-4.png',alt:'4-4 1990-1999年私营企业及不同所有制企业从业人员增长情况'},
+    {url:'chap1_img/4-5.png',alt:'4-5 1990-1999年私营企业及不同所有制企业从业人员增长情况'},
+    {url:'chap1_img/4-6.png',alt:'4-6 私营经济对国民经济的贡献'},
+    {url:'chap1_img/玻璃柜展品 4-5-1.png',alt:'玻璃柜展品4-5-1'},
+    {url:'chap1_img/玻璃柜展品 4-5-2.png',alt:'玻璃柜展品4-5-2'},
+    {url:'chap1_img/玻璃柜展品 4-5-3.png',alt:'玻璃柜展品4-5-3'},
+    {url:'chap1_img/玻璃柜展品 4-5-4.png',alt:'玻璃柜展品4-5-4'},
+    {url:'chap1_img/玻璃柜展品 4-5-5.png',alt:'玻璃柜展品4-5-5'},
+    {url:'chap1_img/玻璃柜展品 4-5-6.png',alt:'玻璃柜展品4-5-6'},
+    {url:'chap1_img/玻璃柜展品 4-5-7.png',alt:'玻璃柜展品4-5-7'},
+    {url:'chap1_img/玻璃柜展品 4-5-8.png',alt:'玻璃柜展品4-5-8'},
+    {url:'chap1_img/玻璃柜展品 4-5-9.png',alt:'玻璃柜展品4-5-9'},
+    {url:'chap1_img/玻璃柜展品 4-5-10.png',alt:'玻璃柜展品4-5-10'},
+    {url:'chap1_img/玻璃柜展品 4-5-11.png',alt:'玻璃柜展品4-5-11'},
+    {url:'chap1_img/玻璃柜展品 4-5-12.png',alt:'玻璃柜展品4-5-12'},
+    {url:'chap1_img/玻璃柜展品 4-5-13.png',alt:'玻璃柜展品4-5-13'},
+    {url:'chap1_img/玻璃柜展品 4-5-14.png',alt:'玻璃柜展品4-5-14'},
+    {url:'chap1_img/玻璃柜展品 4-5-15.png',alt:'玻璃柜展品4-5-15'},
+    {url:'chap1_img/玻璃柜展品 4-5-16.png',alt:'玻璃柜展品4-5-16'}
+    ],
+//1-5 (index 4)
+    [],
+//1-6 (index 5)
+    [],
+//1-7 (index 6)
+    [{url:"chap1_img/7-4.png",alt:' '},
+    {url:"chap1_img/7-7.png",alt:' '},
+    {url:"chap1_img/7-9.png",alt:' '},
+    {url:"chap1_img/7-10.png",alt:' '},
+    {url:"chap1_img/7-11.png",alt:' '},
+    {url:"chap1_img/7-12.png",alt:' '},
+    {url:"chap1_img/7-13.png",alt:' '},
+    {url:"chap1_img/7-14.png",alt:' '},
+    {url:"chap1_img/7-15.png",alt:' '},
+    {url:"chap1_img/7-16.png",alt:' '},
+    {url:"chap1_img/7-17.png",alt:' '},
+    {url:"chap1_img/7-18.png",alt:' '},
+    {url:"chap1_img/7-19.png",alt:' '},
+    {url:"chap1_img/7-20.png",alt:' '},
+    {url:"chap1_img/7-21.png",alt:' '},
+    {url:"chap1_img/7-23.png",alt:' '},
+    {url:"chap1_img/玻璃柜展品7-10-2.png",alt:' '},
+    {url:"chap1_img/玻璃柜展品7-10-3.png",alt:' '},
+    {url:"chap1_img/玻璃柜展品7-10-4.png",alt:' '},
+    {url:"chap1_img/玻璃柜展品7-10-5.png",alt:' '},
+    {url:"chap1_img/玻璃柜展品7-10-6.png",alt:' '},
+    {url:"chap1_img/玻璃柜展品7-10-7.png",alt:' '},
+    {url:"chap1_img/玻璃柜展品7-10-8.png",alt:' '},
+    {url:"chap1_img/玻璃柜展品7-10-9.png",alt:' '},
+    {url:"chap1_img/玻璃柜展品7-10-10.png",alt:' '},
+    {url:"chap1_img/玻璃柜展品7-10-11.png",alt:' '},
+    {url:"chap1_img/玻璃柜展品7-10-12.png",alt:' '},
+    {url:"chap1_img/玻璃柜展品7-10-13.png",alt:' '},
+    {url:"chap1_img/玻璃柜展品7-11-1.png",alt:' '},
+    {url:"chap1_img/玻璃柜展品7-11-2.png",alt:' '},
+    {url:"chap1_img/玻璃柜展品7-11-3.png",alt:' '}
+
+    ],
+    //1-8 (index 7)
+    [],
+    //chap2 (index 8)
+    [],
+    //chap3 (index 9)
+    [{url:"chap3_img/1-2.jpg",alt:''},
+    {url:"chap3_img/1-3.jpg",alt:''},
+    {url:"chap3_img/1-4.jpg",alt:''},
+    {url:"chap3_img/1-5.jpg",alt:' '},
+    {url:"chap3_img/1-6.jpg",alt:' '},
+    {url:"chap3_img/1-7.jpg",alt:' '},
+    {url:"chap3_img/1-8.jpg",alt:' '},
+    {url:"chap3_img/1-9.jpg",alt:' '},
+    {url:"chap3_img/1-10.jpg",alt:' '},
+    {url:"chap3_img/1-11.jpg",alt:' '},
+    {url:"chap3_img/1-12.jpg",alt:' '},
+    {url:"chap3_img/1-13.jpg",alt:' '},
+    {url:"chap3_img/1-14.jpg",alt:' '},
+    {url:"chap3_img/1-15.jpg",alt:' '},
+    {url:"chap3_img/1-16.jpg",alt:' '},
+    {url:"chap3_img/1-17.jpg",alt:' '},
+    {url:"chap3_img/1-18.jpg",alt:' '},
+    {url:"chap3_img/1-19.jpg",alt:' '},
+    {url:"chap3_img/1-20.jpg",alt:' '},
+    {url:"chap3_img/1-21.jpg",alt:' '},
+    {url:"chap3_img/1-22.jpg",alt:' '},
+    {url:"chap3_img/1-23.jpg",alt:' '},
+    {url:"chap3_img/1-24.jpg",alt:' '},
+    {url:"chap3_img/1-30.jpg",alt:' '},
+    {url:"chap3_img/1-31.jpg",alt:' '},
+    {url:"chap3_img/1-32.jpg",alt:' '},
+    {url:"chap3_img/1-33.jpg",alt:' '},
+    {url:"chap3_img/1-34.jpg",alt:' '},
+    {url:"chap3_img/1-35.jpg",alt:' '},
+    {url:"chap3_img/1-36.jpg",alt:' '},
+    {url:"chap3_img/1-37.jpg",alt:' '},
+    {url:"chap3_img/1-38.jpg",alt:' '},
+    {url:"chap3_img/1-39.jpg",alt:' '},
+    {url:"chap3_img/1-40.jpg",alt:' '},
+    {url:"chap3_img/1-41.jpg",alt:' '},
+    {url:"chap3_img/1-42.jpg",alt:' '},
+    {url:"chap3_img/1-43.jpg",alt:' '},
+    {url:"chap3_img/1-44.jpg",alt:' '},
+    {url:"chap3_img/1-45.jpg",alt:' '},
+    {url:"chap3_img/1-46.jpg",alt:' '},
+    {url:"chap3_img/1-47.jpg",alt:' '},
+    {url:"chap3_img/1-48.jpg",alt:' '},
+    {url:"chap3_img/1-49.jpg",alt:' '},
+    {url:"chap3_img/1-50.jpg",alt:' '},
+    {url:"chap3_img/1-51.jpg",alt:' '},
+    {url:"chap3_img/1-52.jpg",alt:' '},
+    {url:"chap3_img/1-53.jpg",alt:' '},
+    {url:"chap3_img/1-54.jpg",alt:' '},
+    {url:"chap3_img/1-55.jpg",alt:' '},
+    {url:"chap3_img/1-56.jpg",alt:' '}
+
+]
+
+
+]
+
+function load(index){
+    var contentDiv = document.querySelector('.allChap');
+    if (contentDiv) {
+      contentDiv.style.display = 'none';
+    }
+
+    //side bar content
+    var sectionId = 'sec' + index;
+    var newContentDiv = document.getElementById(sectionId);
+    newContentDiv.style.display = 'block';
+
+    //gallery
+    var gallery = gal[index]; 
+    var imgGalleryContainer = document.querySelector('.img_gallery');
+    location.hash = 1;
+    console.log(gallery.length);
+    if(gallery.length!=0){
+    var intro = document.querySelector('.intro');
+    intro.style.display = 'none';
+    }
+
+    var currentImageIndex = 0;
+
+  function loadNextImage() {
+    
+    if (currentImageIndex < gallery.length) {
+      var imgDiv = document.createElement('div');
+      imgDiv.classList.add('item');
+
+      var img = new Image();
+      img.classList.add('lazy'); // Add the lazy class
+      img.src = gallery[currentImageIndex].url;
+
+      var figCaption = document.createElement('figcaption');
+      figCaption.textContent = gallery[currentImageIndex].alt;
+
+      var figure = document.createElement('figure');
+      figure.appendChild(img);
+      figure.appendChild(figCaption);
+
+      imgDiv.appendChild(figure);
+
+      imgGalleryContainer.appendChild(imgDiv);
+      currentImageIndex++;
+
+      imgDiv.offsetHeight;
+
+      // Set opacity to 1 for fade-in effect
+      imgDiv.style.opacity = 1;
+
+      // Continue loading the next image
+      loadNextImage();
+    }
+  }
+  setTimeout(() => {
+  loadNextImage();
+  show();
+  },50)
+  
+  var lazyLoadInstance = new LazyLoad();
+}

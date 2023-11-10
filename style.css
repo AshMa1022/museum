@@ -51,13 +51,14 @@ nav{
 }
 .menu {
   height: 100%;
-  width: 300px;
+  width: 330px;
   position: fixed;
   left: 0;
   top: 300;
   background-color: #f5efe9;
   overflow-x: hidden;
   padding-top: 4.5rem;
+
 }
 
 .menu a {
@@ -89,17 +90,25 @@ nav{
         padding-left: 2rem;
         font-size: 15px;
         line-height: 7px;
-        display: none;
+
         opacity: 0;
-        transition: opacity 1s;
+        display: none;
+        transition: opacity 0.5s ease-in-out;
+      }
+      .subChap_visible{
+        padding-left: 2rem;
+        font-size: 15px;
+        line-height: 7px;
+        opacity: 1;
       }
 
 .sec{
   font-weight: 200;
   font-size: 15px;
+  line-height: 23px;
   margin-bottom: 5rem;
-  margin-left:1rem;
-  margin-right: 1rem;
+  margin-left:1.5rem;
+  margin-right: 1.5rem;
   margin-top: -1rem;
   display: none;
 }
@@ -109,10 +118,6 @@ nav{
 .container{
     float:right;
     margin-left: 300px;
-
-
-
-
 }
 .intro{
   float: left;
@@ -133,7 +138,7 @@ nav{
 
 /*img_gallery <-item(=figure)*/
 .img_gallery{
-  margin-left: 1rem;
+    margin-left: 2.4rem;
     margin-top: 5rem;
     display: gird;
     align-items: top;
@@ -141,17 +146,20 @@ nav{
     gap:20px;
     
 }
-.img_gallery101{
-  display: none;
-}
-.img_gallery102{
-  display: none;
+
+.chap_visible{
+  display: block;
+  transform: translateZ(0); 
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
 }
 .item{
   block-size: auto;
   margin-bottom: 15px;
   font-weight: bold;
   display: inline-block;
+  opacity: 0; /* Set initial opacity to 0 */
+  transition: opacity 1s ease-in-out;
 }
 
 figure{  
@@ -196,8 +204,8 @@ figcaption{
   #modal #caption {
     text-align: center;
     color: #fff;
-    margin-top: 0;
-    font-size: 20px;
+    margin-top: 3px;
+    font-size: 17px;
   }
   
   #modal .close {
@@ -227,11 +235,11 @@ figcaption{
   }
   
   #prev {
-    left: 20rem;
+    left: 5rem;
   }
   
   #next {
-    right: 20rem;
+    right: 5rem;
   }
 
    .fade-in {
@@ -448,7 +456,7 @@ figcaption{
     text-align: center;
     color: #fff;
     margin-top: 0;
-    font-size: 20px;
+    font-size: 8px;
   }
   
   #modal .close {

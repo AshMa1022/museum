@@ -1,12 +1,13 @@
 
-
-const gallery = document.querySelectorAll('.img_gallery img');
+function show(){
+const gallery = document.querySelectorAll('.container img');
 const modal = document.getElementById('modal');
 const modalImg = document.getElementById('modal-img');
 const caption = document.getElementById('caption');
 const captionText = document.getElementsByTagName('figcaption');
 
 let currentImageIndex = 0;
+console.log(gallery);
 
 // Open the modal and display the clicked image
 gallery.forEach((img, index) => {
@@ -14,7 +15,7 @@ gallery.forEach((img, index) => {
     modal.style.display = 'block';
     modalImg.src = img.src;
     currentImageIndex = index;
-    captionText.innerText = captionText[currentImageIndex].innerHTML;
+    caption.innerText = captionText[currentImageIndex].innerHTML;
   });
 });
 
@@ -28,13 +29,13 @@ closeBtn.addEventListener('click', closeModal);
 const nextImage = () => {
   currentImageIndex = (currentImageIndex + 1) % gallery.length;
   modalImg.src = gallery[currentImageIndex].src;
-  captionText.innerText = captionText[currentImageIndex].innerHTML;
+  caption.innerText = captionText[currentImageIndex].innerHTML;
 };
 
 const prevImage = () => {
   currentImageIndex = (currentImageIndex - 1 + gallery.length) % gallery.length;
   modalImg.src = gallery[currentImageIndex].src;
-  captionText.innerText = captionText[currentImageIndex].innerHTML;
+  caption.innerText = captionText[currentImageIndex].innerHTML;
 };
 
 const nextBtn = document.getElementById('next');
@@ -48,3 +49,4 @@ window.addEventListener('click', event => {
     closeModal();
   }
 });
+}

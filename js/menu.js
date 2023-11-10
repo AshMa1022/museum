@@ -1,52 +1,34 @@
-function loadContent(sectionNumber) {
-  // side bar menu
-    var contentDiv = document.querySelector('.allChap');
-    if (contentDiv) {
-      contentDiv.style.display = 'none';
-    }
-   
-    //section text
-    var sectionId = 'chap' + sectionNumber;
-    var newContentDiv = document.getElementById(sectionId);
-    var name = '.img_gallery'+sectionNumber;
-    var gallery = document.querySelector(name);
-    console.log(gallery);
-    var intro = document.querySelector('.intro');
-    
-    if (newContentDiv) {
-      location.hash = 1;
-      newContentDiv.style.display = 'block';
-      gallery.style.display = 'block';
-      intro.style.display = 'none';
-    }
-  }
 
   function loadSecondary(){
     var sec = document.querySelector(".subChap");
-    sec.classList.add('fade-in');
-    if(sec.style.display == 'none'){
-      sec.transform = 'translateX(-40px)';
-      sec.style.display = 'block';
+    var isHidden = window.getComputedStyle(sec).display === 'none';
+    if (isHidden) {
+      console.log(1);
+      sec.style.display = 'block'; // or 'flex' or 'grid', depending on your layout
+      // Trigger reflow before adding the class for the transition
+      sec.offsetHeight; // This line is necessary to force a reflow
+      sec.classList.add('subChap_visible');
+    } else {
+      sec.classList.remove('subChap_visible');
+      // Delay setting display to 'none' to allow the transition to complete
+      setTimeout(() => {
+        sec.style.display = 'none';
+      }, 200); // Adjust the delay based on your transition duration
     }
-    else{
-      sec.transform = 'translateX(-40px)';
-      sec.style.display = 'none';
-      
-    }
-    setTimeout(function () {
-      sec.classList.add('show');
-      sec.style.transform = 'translateX(0px)';
-    }, 10);
 
   }
 
   function returnM(sectionNumber) {
-    var gallery = document.querySelector(".img_gallery" + sectionNumber);
-    var contentDiv = document.getElementById('chap' + sectionNumber);
-    if (contentDiv) {
-      contentDiv.style.display = 'none';
-      gallery.style.display ='none';
-    }
+    var gallery = document.querySelector(".img_gallery");
+    var contentDiv = document.getElementById('sec' + sectionNumber);
+    // if (contentDiv) {
+    //   contentDiv.style.display = 'none';
+    //   if(gallery){
+    //     gallery.style.display ='none';
+    //   }
+    // }
+    gallery.innerHTML='';
+    contentDiv.style.display='none';
     var menu = document.querySelector('.menu');
     var intro = document.querySelector('.intro');
     var newContentDiv = document.querySelector('.allChap');

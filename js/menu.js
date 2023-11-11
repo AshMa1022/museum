@@ -19,7 +19,9 @@
   }
 
   function returnM(sectionNumber) {
-    var gallery = document.querySelector(".img_gallery");
+    var menu = document.querySelector(".menu");
+    menu.style.opacity = 0;
+    var galleryc = document.querySelector(".img_gallery_container");
     var contentDiv = document.getElementById('sec' + sectionNumber);
     // if (contentDiv) {
     //   contentDiv.style.display = 'none';
@@ -27,13 +29,35 @@
     //     gallery.style.display ='none';
     //   }
     // }
-    gallery.innerHTML='';
+    galleryc.innerHTML='';
     contentDiv.style.display='none';
+    if(sectionNumber == 5){
+      galleryc.innerHTML='';
+    }
     var menu = document.querySelector('.menu');
     var intro = document.querySelector('.intro');
     var newContentDiv = document.querySelector('.allChap');
     if (newContentDiv) {
-      newContentDiv.style.display = 'block';
+      newContentDiv.style.display = 'flex';
       intro.style.display = 'block';
     }
+  }
+
+  function scrollToTarget(target) {
+    var targetElement = document.querySelector(target);
+    if (targetElement) {
+      // Scroll the container to the top of the target element with smooth animation
+      document.querySelector('.img_gallery_container').scrollTo({
+        top: targetElement.offsetTop,
+        behavior: 'smooth'
+      });
+      console.log(target);
+      if(target ==".sub_gallery2"){
+      document.querySelector('.menu').scrollTo({
+        top:410,
+        behavior: 'smooth'
+      });
+    }
+    }
+  
   }

@@ -5,7 +5,7 @@
 @media only screen and (min-width: 768px) {
 body{
     background-color: #f2f2f2;
-    font-family:'Noto Serif',serif;
+    font-family:'Noto Sans-serif',sans-serif;
     padding: 0;
     margin:0;
 }
@@ -22,7 +22,7 @@ img{
     border-bottom: black;
     border-bottom-style: solid;
     width: 100%;
-    background-color: #f5efe9;
+    background-color:rgba(245, 239, 233,0.85);
     z-index: 100;
     top:0;
     left:0;
@@ -49,23 +49,34 @@ nav{
     border-color: black;
     border-style: solid;
 }
+.side_nav{
+  padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      display: flex;
+      justify-content:space-around;
+  background-color: rgba(245, 239, 233,0.85);
+}
 .menu {
   height: 100%;
-  width: 330px;
+  width: 300px;
   position: fixed;
   left: 0;
-  top: 300;
-  background-color: #f5efe9;
+  top: 64px;
+  padding-top: 1rem;
+  background-color: rgba(255, 255, 255, 0.85);
   overflow-x: hidden;
-  padding-top: 4.5rem;
+  height: 100vh; /* Set the desired height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  transition: transform 0.5s ease;
+  opacity: 0;
 
 }
 
-.menu a {
-  padding: 10px 25px;
+.side_nav a {
   text-decoration: none;
   color: #000000;
-  display: block;
 }
 
 .return{
@@ -74,7 +85,7 @@ nav{
   font-weight: 600;
 }
 
-.menu a:hover{
+.side_nav a:hover{
   color: #e60808;
 }
 .return:hover {
@@ -82,17 +93,34 @@ nav{
 }
 
 /*menu <- allChap <- chap <-subchap*/
+.allChap {
+  display: flex;
+  height: 2rem;
+}
       .chap{
-        font-size: 18px;
-        line-height: 20px;
+        font-size: 16px;
+        line-height: 17px;
+        height: 100px;
+        display: inline;
+        padding-left: 3rem;
+        padding-top: 0.2rem;
+        padding-right: 3rem
+        
+        
       }
       .subChap{
-        padding-left: 2rem;
+        
         font-size: 15px;
         line-height: 7px;
-
-        opacity: 0;
         display: none;
+        position: absolute;
+        top: -50%; /* Position above the .chap element */
+        left: 0;
+        width: 100%;
+        background-color: rgba(245, 239, 233,0.85);
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
         transition: opacity 0.5s ease-in-out;
       }
       .subChap_visible{
@@ -117,17 +145,18 @@ nav{
 
 .container{
     float:right;
-    margin-left: 300px;
+    margin-left: 303px;
+    height:100%;
+    position: fixed;
 }
 .intro{
-  float: left;
-
   text-align: center;
-  margin-left: 5rem;
-  width: calc(100vw - 20vh);
+  width: 100vw;
   height: 100vh;
   background-image: url('/hp_img/entrance.png');
   background-size:cover;
+  background-attachment: fixed;
+  position:fixed;
 }
 .intro img{
   position: fixed;
@@ -135,16 +164,47 @@ nav{
   bottom:0;
   right:0;
 }
+#toGallery:hover{
+  color:red;
+}
 
 /*img_gallery <-item(=figure)*/
+.img_gallery_container{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  height: 100vh; /* Set the desired height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  transition: transform 0.5s ease;
+
+}
 .img_gallery{
-    margin-left: 2.4rem;
-    margin-top: 5rem;
-    display: gird;
+    margin:0;
+    padding-left: 0.5rem;
+    padding-top: 5rem;
     align-items: top;
     columns:15rem;
     gap:20px;
+    background-color: #f2f2f2;;
     
+    
+}
+.sub_gallery1{
+  background-color: #c1acac;
+
+}
+.sub_gallery1 figure{
+  background-color: #c1acac;
+}
+.sub_gallery2{
+  background-color: #625e5e;
+
+}
+.sub_gallery2 figure{
+  background-color: #625e5e;
+}
+.sub_gallery2 figcaption{
+  color: #f5efe9;
 }
 
 .chap_visible{
@@ -177,6 +237,10 @@ figcaption{
   padding:0rem 0rem .2rem .5em;
   justify-self: start;
   font-size: 10px;
+}
+
+#toTop:hover{
+  color:red;
 }
     
 

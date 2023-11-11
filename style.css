@@ -95,7 +95,7 @@ nav{
 /*menu <- allChap <- chap <-subchap*/
 .allChap {
   display: flex;
-  height: 2rem;
+  height: 1.5rem;
 }
       .chap{
         font-size: 16px;

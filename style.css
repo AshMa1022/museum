@@ -53,14 +53,14 @@ img{
 }
 
 .backdrop-div{
-  backdrop-filter: blur(3px); 
+  backdrop-filter: blur(10px); 
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  width: inherit;
   z-index: -1;
-  transition: height 0.3s ease; 
 }
 .backdrop-div-sub{
   backdrop-filter: blur(100%); 

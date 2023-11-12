@@ -228,7 +228,7 @@ img{
   text-align: center;
   width: 100vw;
   height: 100vh;
-  background-image: url('/hp_img/entrance.jpg');
+  background-image: url('hp_img/entrance.jpg');
   background-size:cover;
   background-attachment: fixed;
   position:fixed;

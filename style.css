@@ -14,6 +14,10 @@ img{
 }
 
 /* header <- nav */
+.header-container{
+  margin:0;
+  
+}
 .header{
     position: fixed;
     display: inline-flex;
@@ -22,16 +26,32 @@ img{
     border-bottom: black;
     border-bottom-style: solid;
     border-width: 0.5px;
-    width: 100%;
+    margin:0;
     background-color:rgba(245, 239, 233,0);
     z-index: 100;
     top:0;
     left:0;
     padding:0 1rem 0 1rem;
-    margin-right: 3rem;;
     height: 3rem;
-    color:white
+    color:white;
+    width: 100%;
+    transition: height 0.3s ease; 
+    
+
 }
+.title{
+  width: 20%;
+  height: 3rem;
+
+  font-size: 0.75rem;
+  padding-top: 10px;
+}
+.title h1{
+  font-family: "Noto Serif",serif;
+  
+  margin:0;
+}
+
 .backdrop-div{
   backdrop-filter: blur(3px); 
   position: absolute;
@@ -40,6 +60,7 @@ img{
   left: 0;
   right: 0;
   z-index: -1;
+  transition: height 0.3s ease; 
 }
 .backdrop-div-sub{
   backdrop-filter: blur(100%); 
@@ -55,9 +76,9 @@ img{
   max-height: 5vh; 
 }
 
-nav{
-  margin-right: 3rem;
+#nav{
   align-self:  center;
+  padding-right: 2rem;
 }
 
 /* main <-menu, <-sec, <-container*/
@@ -74,8 +95,7 @@ nav{
 }
 .side_nav{
   padding: 10px;
-      position: fixed;
-      bottom: 0;
+
       width: 100%;
       display: flex;
       justify-content:space-around;
@@ -129,12 +149,24 @@ nav{
   
 }
       .chap{
-        font-size: 16px;
+        font-size: 12px;
         line-height: 17px;
         height: 100px;
         display: inline;
         padding-left: 3rem;
-        padding-right: 3rem
+        padding-right: 3rem;
+        
+      }
+      .chap1{
+        position: relative;
+        margin: 0;
+        top:-1.5rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        
+      }
+      .chap1 a{
+        margin:0;
         
         
       }
@@ -144,9 +176,9 @@ nav{
         line-height: 15px;
         display: none;
         position: absolute;
-        top: -730%; /* Position above the .chap element */
-        left: 5%;
-        width: 15%;
+        top: 68px; /* Position above the .chap element */
+        left: -30px;
+        width: 105%;
         flex-direction: column;
         align-items: center;
         
@@ -164,6 +196,12 @@ nav{
         line-height: 30px;
         opacity: 1;
 
+      }
+      .about{
+        padding-top: 0rem;
+        padding-left: 10%;
+        padding-right: 3%;
+        display: none;
       }
 
 .sec{

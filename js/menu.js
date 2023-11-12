@@ -23,14 +23,22 @@
     var menu = document.querySelector(".menu");
     menu.style.opacity = 0;
     var galleryc = document.querySelector(".img_gallery_container");
-    var contentDiv = document.querySelector('.sec');
-
+    var header = document.querySelector('.header'); 
+    header.style.color="white";
     galleryc.innerHTML='';
-    contentDiv.style.display='none';
-    if(sectionNumber == 5){
-      galleryc.innerHTML='';
+
+    if(sectionNumber ==-1){
+      var contentDiv = document.querySelector('.menu');
+      contentDiv.style.display='none';
     }
-    var menu = document.querySelector('.menu');
+    else{
+   
+    var contentDiv = document.getElementById('sec' + sectionNumber);
+    
+    contentDiv.style.display='none';
+
+  }
+
     var intro = document.querySelector('.intro');
     var newContentDiv = document.querySelector('.side_nav');
     if (newContentDiv) {
@@ -56,4 +64,35 @@
     }
     }
   
+  }
+
+  function about(){
+    
+      // Get the header element
+      var add = document.querySelector('.add');
+      var container=document.querySelector('.header-container');
+      var header =document.querySelector('.header');
+
+     
+     var newContentDiv = document.querySelector('.about');
+     console.log(newContentDiv);
+     var isVisible = newContentDiv.style.display !== 'none';
+     
+
+  if (isVisible) {
+    // If already visible, hide the new content div
+    newContentDiv.style.display = 'none';
+    header.style.height = '3rem'; // Set the height back to auto or any other desired value
+    add.style.marginTop = '0'; // Set the margin back to its original value
+  } else {
+    // If not visible, show the new content div with a smooth ease-in animation
+    newContentDiv.style.display = 'block';
+    header.style.height = '20rem'; // Adjust the desired height
+    add.style.marginTop = '1rem'; // Adjust the margin to accommodate the expanded header
+
+    // Apply a smooth transition effect
+    setTimeout(function () {
+      newContentDiv.style.transition = 'height 0.3s ease'; // Adjust the duration and easing function
+    }, 0);
+  }
   }

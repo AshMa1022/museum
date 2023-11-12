@@ -13,16 +13,73 @@
     </style> 
 </head>
 <body>
+    <div class="header-container">
     <div class="header">
-        <header>
-            <img class="title" alt="新打工人文化博物馆" src="/hp_img/header.png" onclick="returnM(-1)">
-        </header>
-        <h3>打工·三十年·流动的历史</h2>
-        <nav>
-            <a style ="color:gray">关于</a>
-        </nav>
-        <div class="backdrop-div"></div>
+        <div class="title"><h1>新打工人文化博物馆</h1></div>
+        <div class ="add">
+        <div class ="about" style="display: none;">
+            <p>改革开放三十年来，中国的工业化、城市化、经济建设飞速发展，这其中离不开我们亿万打工兄弟姐妹们所付出的劳动和贡献。
+                从乡村到城市，流动打工群体是城乡的纽带和桥梁、是推动中国社会前进的新型劳动大军、是中华民族的脊梁。
+                我们希望通过打工文化艺术博物馆来纪录和反映我们劳动者自己的
+                文化和历史。</p>
+            <p>因为，没有我们的文化就没有我们的历史，没有我们的历史就没有
+                我们的将来。
+                这也正是我们创办打工文化艺术博物馆和举办这次展览的目的
+                —纪录打工群体的历史变迁，倡导劳动价值的尊重认可。
+            </p>
+            <p>打工文化艺术博物馆
+                2008年5月1日
+                </p>
+        </div>
+        <div class ="side_nav">
+            <div class="allChap">
+                <div class="chap1">
+                    <a class="chap" onclick="loadSecondary()"><h3>第一展厅 流动的历史</h3></a>
+                    <div class ="subChap">
+                        <div class="backdrop-div"></div>
+                        <a href="javascript:void(0);" 
+                        onclick="load(0)">[壹] 建国初期 </a>
+                        <a href="javascript:void(0);" 
+                        onclick="load(1)">[贰] 农村改革 </a>
+                        <a href="javascript:void(0);" 
+                        onclick="load(2)">[叁] 离土不离乡 </a>
+                        <a href="javascript:void(0);" 
+                        onclick="load(3)">[肆] 务工潮出现 </a>
+                        <a href="javascript:void(0);" 
+                        onclick="load(4)">[伍] 管理制度 </a>
+                        <a href="javascript:void(0);" 
+                        onclick="load(5)">[陸] 艰辛生活 </a>
+                        <a href="javascript:void(0);" 
+                        onclick="load(6)" >[七] NGO诞生 </a>
+                        <a href="javascript:void(0);" 
+                        onclick="load(7)">[八] 政策调整 </a>
+                        
+                    </div>
+                </div>
+    
+            <hr>
+            <a class ="chap" href="javascript:void(0);" 
+            onclick="load(8)"><h3>第二展厅 女工展厅</h3></a>
+            <hr>
+            <a class ="chap" href="javascript:void(0);" 
+            onclick="load(9)"><h3>第三展厅 儿童展厅</h3></a>
+            <hr>
+            <a class ="chap" href="javascript:void(0);" 
+            onclick="load(10)"><h3>第四展厅 NGO展厅</h3></a>
+            <hr>
+    
+            </div>
+            <div class="backdrop-div"></div>
+    
+                
+        </div>
+    </div>
+        <div id="nav">
+            <a onclick="about()"">关于</a>
+        </div>
     </li>
+    </div>
+    <div class="backdrop-div"></div>
     </div>
 
 
@@ -59,7 +116,7 @@
                 城乡壁垒日益森严，耸立在城乡之间的“户籍墙”坚不可摧，二元社会结构逐步形成和凝固化。
                 </p>
             <br>
-            <br>
+            <p class="return" onclick="returnM(0)"> < </p>
             
 
         </div>
@@ -88,6 +145,7 @@
                 中共中央关于加快农业发展若干问题的决定——1979年9月28日
                 我国农村现在有八亿人口，有三亿劳动力，随着农业现代化的进展，必将有大量农业劳动力可以逐步节省下来，这些劳动力不可能也不必要都进入现有的大、中城市，工业和其他各项建设事业也不可能和不必要都放在这些城市。我们一定要十分注意加强小城镇的建设，逐步用现代工业交通业、现代商业服务业、现代教育科学文化卫生事业把它们武装起来，作为改变全国农村面貌的前进基地。
             </p>
+            <p class="return" onclick="returnM(1)"> < </p>
         </div>
         <div class="sec" id = "sec2">
             <p class="return" onclick="returnM(2)">离土不离乡 </p>
@@ -105,6 +163,7 @@
                 预计到本世纪末，现在农村（包括集镇）范围的劳动力将达四点五亿人。根据发达地区的经验，机械化程度提高之后，农业能够容纳的劳力或劳动时间不超过十分之三。林、牧、渔业能够容纳的劳力或劳动时间不超过十分之二。能进城市或工矿区就业的不超过十分之一。其余十分之四以上，即一亿以上的劳力只能向农村（包括集镇）工业、建筑业、运输业、商业和其他服务业以及家庭工副业寻求出路，否则将成为严重的社会问题。现在社队企业的劳力（包括农忙务农的）三千一百多万人，社员联营企业近二百万人，合计只占农村劳力十分之一，因此，社队企业和社员联营企业都应争取有几倍的增长。
                 </p>
             <br>
+            <p class="return" onclick="returnM(2)"> < </p>
             
         </div>
         <div class="sec" id = "sec3">
@@ -133,6 +192,7 @@
                 2月10日，小平参观上海贝岭微电子制造有限公司。
                 </p>
             <br>
+            <p class="return" onclick="returnM(3)"> < </p>
             
         </div>
         <div class="sec" id = "sec4">
@@ -201,7 +261,8 @@
             <p>5-11 摘录
                 《北京市外来人员就业证》管理办法——1995年
                 凡在本市行政区域内的机关、团体、企业、事业单位和个体工商户（以下统称用人单位）使 用外地来京务工人员的，均须为其申办《北京市外来人员就业证》（以下简称《就业证》）
-                </p>
+            </p>
+            <p class="return" onclick="returnM(4)"> < </p>
             
         </div>
         <div class ="sec" id="sec5">
@@ -265,6 +326,7 @@
             <p>金美人事室</p> 
             <p>2007年12月3日                    
             </p>
+            <p class="return" onclick="returnM(5)"> < </p>
 
         </div>
 
@@ -362,6 +424,7 @@
                 （四）解除或者终止劳动合同，未依照本法规定向劳动者支付经济补偿的。
             </p>
             <br>
+            <p class="return" onclick="returnM(7)"> < </p>
 
         </div>
         <div class ="sec" id ="sec8">
@@ -387,6 +450,7 @@
                 生育孩子的责任和代价不应由妇女来承担。妇女回家同妇女的个性追求相违背，多数女性回家后会感到生活苦闷;妇女回家同妇女解放运动相违背，“妇女解放的第一个先决条件就是一切女性重新回到公共的劳动中去。” 妇女参加公共劳动并不是出于资本逻辑下的工具理性，而是出于对全人类的，包括每一个男女的，福祉的共同追求。
                 </p>
             <br>
+            <p class="return" onclick="returnM(8)"> < </p>
         
         </div>
         <div class="sec" id = "sec9">
@@ -411,7 +475,8 @@
             </p>
             <p>
                 这里是有关打工子女学校拆迁和关停的一个图片展。由于城市的扩张和其他种种原因，很多民办打工子女学校遭到关停。被关停学校的学生中约53%转入其他打工子女学校，约三分之一回老家上学成为留守儿童，约13.6%被分流至当地公办学校。
-                </p>
+            </p>
+            <p class="return" onclick="returnM(9)"> < </p>
         
         </div>
         <div class="sec" id ="sec10">
@@ -435,52 +500,12 @@
             <p>初步统计，我国目前有80家左右从事流动人口/外来工相关工作的NGO的发展，有关打工者服务的草根NGO增长缓慢，但社会需求巨大。
                 主要分布咋北京、天津、山东，长三角（江苏、浙江、上海），珠三角（东莞、深圳、广州居多），以及部分中西部省份，例如云南、安徽、湖北、湖南、重庆等。
                 上述NGO主要在工业区及城乡结合部从事社区工作、法律援助、工人文化、家政工、政策倡导等工作，部分NGO主要以流动儿童工作为主，辅以面向成人的工作。
-                </p>
+            </p>
+            <p class="return" onclick="returnM(10)"> < </p>
 
         </div>
     </div>
-    <div class ="side_nav">
-        <div class="allChap">
-        <a class="chap" onclick="loadSecondary()"><h3>第一展厅 流动的历史</h3></a>
-        <div class ="subChap">
-            <div class="backdrop-div"></div>
-            <a href="javascript:void(0);" 
-            onclick="load(0)">[壹] 建国初期 </a>
-            <a href="javascript:void(0);" 
-            onclick="load(1)">[贰] 农村改革 </a>
-            <a href="javascript:void(0);" 
-            onclick="load(2)">[叁] 离土不离乡 </a>
-            <a href="javascript:void(0);" 
-            onclick="load(3)">[肆] 务工潮出现 </a>
-            <a href="javascript:void(0);" 
-            onclick="load(4)">[伍] 管理制度 </a>
-            <a href="javascript:void(0);" 
-            onclick="load(5)">[陸] 艰辛生活 </a>
-            <a href="javascript:void(0);" 
-            onclick="load(6)" >[七] NGO诞生 </a>
-            <a href="javascript:void(0);" 
-            onclick="load(7)">[八] 政策调整 </a>
-            
-        </div>
-
-        <hr>
-        <a class ="chap" href="javascript:void(0);" 
-        onclick="load(8)"><h3>第二展厅 女工展厅</h3></a>
-        <hr>
-        <a class ="chap" href="javascript:void(0);" 
-        onclick="load(9)"><h3>第三展厅 儿童展厅</h3></a>
-        <hr>
-        <a class ="chap" href="javascript:void(0);" 
-        onclick="load(10)"><h3>第四展厅 NGO展厅</h3></a>
-        <hr>
-        <a class ="chap" style ="color:gray"><h3>第五展厅 劳动展厅</h3></a>
-        <hr>
-
-        </div>
-        <div class="backdrop-div"></div>
-
-            
-    </div>
+   
 
 
 

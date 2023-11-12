@@ -345,9 +345,12 @@ function load(index){
     //side bar content
     var sectionId = 'sec' + index;
     var menu = document.querySelector('.menu');
+    menu.style.display="block";
     menu.style.opacity=1;
     var newContentDiv = document.getElementById(sectionId);
     newContentDiv.style.display = 'block';
+    var header = document.querySelector('.header');
+    header.style.color="black";
 
     //gallery
     var gallery = gal[index]; 
@@ -361,6 +364,7 @@ function load(index){
 
     var currentImageIndex = 0;
 if(index == 5){
+  
     var container = document.querySelector('.img_gallery_container');
     var subSec2 = document.createElement('div');
     subSec2.classList.add('sub_gallery2');
@@ -442,6 +446,10 @@ if(index == 5){
         show();
         },50)
 
+}
+else if(index == 4){
+  header.style.color="white";
+  menu.style.opacity=0.75;
 }
 else{
   var container = document.querySelector('.img_gallery_container');

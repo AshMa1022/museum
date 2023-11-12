@@ -21,13 +21,34 @@ img{
     align-items: center;
     border-bottom: black;
     border-bottom-style: solid;
+    border-width: 0.5px;
     width: 100%;
-    background-color:rgba(245, 239, 233,0.85);
+    background-color:rgba(245, 239, 233,0.50);
     z-index: 100;
     top:0;
     left:0;
     padding:0 1rem 0 1rem;
     margin-right: 3rem;;
+    height: 3rem;
+}
+.backdrop-div{
+  backdrop-filter: blur(3px); 
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+.backdrop-div-sub{
+  backdrop-filter: blur(100%); 
+  transition: transform 0.5s ease;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
 }
 .header img{
   max-height: 5vh; 
@@ -48,6 +69,7 @@ nav{
     width:15%;
     border-color: black;
     border-style: solid;
+    border-width: 0.5px;
 }
 .side_nav{
   padding: 10px;
@@ -56,14 +78,15 @@ nav{
       width: 100%;
       display: flex;
       justify-content:space-around;
-  background-color: rgba(245, 239, 233,0.85);
+       background-color: rgb(238, 233, 229);
+      
 }
 .menu {
   height: 100%;
   width: 300px;
   position: fixed;
   left: 0;
-  top: 64px;
+  top: 48px;
   padding-top: 1rem;
   background-color: rgba(255, 255, 255, 0.85);
   overflow-x: hidden;
@@ -77,25 +100,28 @@ nav{
 .side_nav a {
   text-decoration: none;
   color: #000000;
+  font-weight: 800;
 }
 
 .return{
-  font-size: 30px;
-  padding:0;
-  font-weight: 600;
+  font-size: 18px;
+  padding:2px;
+  font-weight: 400;
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
 }
 
 .side_nav a:hover{
-  color: #e60808;
+  color: #b4b4b4;
 }
 .return:hover {
-  color: #e60808;
+  color: #b4b4b4;
 }
 
 /*menu <- allChap <- chap <-subchap*/
 .allChap {
   display: flex;
-  height: 1.5rem;
+  height: 1rem;
 }
       .chap{
         font-size: 16px;
@@ -103,7 +129,6 @@ nav{
         height: 100px;
         display: inline;
         padding-left: 3rem;
-        padding-top: 0.2rem;
         padding-right: 3rem
         
         
@@ -111,27 +136,33 @@ nav{
       .subChap{
         
         font-size: 15px;
-        line-height: 7px;
+        line-height: 15px;
         display: none;
         position: absolute;
-        top: -50%; /* Position above the .chap element */
-        left: 0;
-        width: 100%;
-        background-color: rgba(245, 239, 233,0.85);
-        flex-direction: row;
+        top: -730%; /* Position above the .chap element */
+        left: 5%;
+        width: 15%;
+        flex-direction: column;
         align-items: center;
-        padding: 10px;
+        
+        padding: 15px;
+        opacity: 0;
         transition: opacity 0.5s ease-in-out;
       }
+      .subChap a{
+        font-weight: 500;
+        color:rgb(239, 232, 232);
+      }
       .subChap_visible{
-        padding-left: 2rem;
+        padding-left: 1.5rem;
         font-size: 15px;
-        line-height: 7px;
+        line-height: 30px;
         opacity: 1;
+
       }
 
 .sec{
-  font-weight: 200;
+  font-weight: 400;
   font-size: 15px;
   line-height: 23px;
   margin-bottom: 5rem;
@@ -139,6 +170,7 @@ nav{
   margin-right: 1.5rem;
   margin-top: -1rem;
   display: none;
+
 }
 
 /* container <- .img_gallery <- intro*/
@@ -255,7 +287,7 @@ figcaption{
     overflow: auto;
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.9);
-    padding-top: 60px;
+    padding-top: 80px;
   }
   
   #modal img {
@@ -269,7 +301,9 @@ figcaption{
     text-align: center;
     color: #fff;
     margin-top: 3px;
-    font-size: 17px;
+    font-size: 15px;
+    width: 70%;
+    padding-left: 14%;
   }
   
   #modal .close {

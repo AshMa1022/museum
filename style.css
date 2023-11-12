@@ -23,13 +23,14 @@ img{
     border-bottom-style: solid;
     border-width: 0.5px;
     width: 100%;
-    background-color:rgba(245, 239, 233,0.50);
+    background-color:rgba(245, 239, 233,0);
     z-index: 100;
     top:0;
     left:0;
     padding:0 1rem 0 1rem;
     margin-right: 3rem;;
     height: 3rem;
+    color:white
 }
 .backdrop-div{
   backdrop-filter: blur(3px); 
@@ -78,7 +79,10 @@ nav{
       width: 100%;
       display: flex;
       justify-content:space-around;
-       background-color: rgb(238, 233, 229);
+       background-color: rgb(238, 233, 229,0);
+       height:2.4rem;
+       
+       
       
 }
 .menu {
@@ -99,8 +103,8 @@ nav{
 
 .side_nav a {
   text-decoration: none;
-  color: #000000;
-  font-weight: 800;
+  color:white;
+  font-weight: 600;
 }
 
 .return{
@@ -122,6 +126,7 @@ nav{
 .allChap {
   display: flex;
   height: 1rem;
+  
 }
       .chap{
         font-size: 16px;
@@ -185,7 +190,7 @@ nav{
   text-align: center;
   width: 100vw;
   height: 100vh;
-  background-image: url('/hp_img/entrance.png');
+  background-image: url('/hp_img/entrance.jpg');
   background-size:cover;
   background-attachment: fixed;
   position:fixed;

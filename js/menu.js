@@ -19,6 +19,7 @@
 
   }
 
+  // a really bad approach of returning to homepage.
   function returnM(sectionNumber) {
     var menu = document.querySelector(".menu");
     menu.style.opacity = 0;
@@ -66,11 +67,11 @@
   
   }
 
+  // this function is called to load the about section.
   function about(){
     
       // Get the header element
       var add = document.querySelector('.add');
-      var container=document.querySelector('.header-container');
       var header =document.querySelector('.header');
 
      
@@ -82,13 +83,13 @@
   if (isVisible) {
     // If already visible, hide the new content div
     newContentDiv.style.display = 'none';
-    header.style.height = '3rem'; // Set the height back to auto or any other desired value
-    add.style.marginTop = '0'; // Set the margin back to its original value
+    header.style.height = '3rem'; 
+    add.style.marginTop = '0'; 
   } else {
     // If not visible, show the new content div with a smooth ease-in animation
     newContentDiv.style.display = 'block';
-    header.style.height = '20rem'; // Adjust the desired height
-    add.style.marginTop = '1rem'; // Adjust the margin to accommodate the expanded header
+    header.style.height = '20rem';
+    add.style.marginTop = '1rem';
 
     // Apply a smooth transition effect
     setTimeout(function () {

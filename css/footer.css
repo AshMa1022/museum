@@ -1,0 +1,25 @@
+.main-footer {
+  background-color: #ffffff;
+  padding: 0px 61px;
+}
+
+.footer-container {
+  border-top: 3px solid #b10200;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.footer-title {
+  border-bottom: 1px solid #b10200;
+  color: #222;
+  font-family: "Source Sans 3";
+}

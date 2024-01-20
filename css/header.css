@@ -12,10 +12,6 @@
   z-index: 1;
 }
 
-.logo img {
-  width: 180px;
-}
-
 .main-nav {
   justify-content: center;
   align-items: center;

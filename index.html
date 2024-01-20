@@ -7,19 +7,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <style>
       body, html {
+
         height: 100%;
         margin: 0;
         overflow: hidden;
+        /*
+        display: flex;
+        flex-direction: column;
+     
+        margin: 0;
+        */
+      }
+
+      main {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
     </style>
   </head>
 
   <body class="bg">
     <header class="main-header">
-      <div class="logo">
-        <a href="index.html"><img src="images/h-logo.svg" alt="博物馆LOGO"></a>
+      <div>
+        <a href="index.html"><img src="images/h-logo.svg" alt="博物馆LOGO" style="width: 180px;"></a>
       </div>
 
       <div class="main-nav">
@@ -33,7 +50,7 @@
                 <li><a href="gallery1Module3.html">离土不离乡</a></li>
                 <li><a href="gallery1Module4.html">务工潮出现</a></li>
                 <li><a href="gallery1Module5.html">管理制度</a></li>
-                <li class="dropdown-second"><a href="#" aria-haspopup="true">艰辛生活></a>
+                <li class="dropdown-second"><a href="#" aria-haspopup="true">艰辛生活 ></a>
                   <ul class="second-submenu">
                     <li><a href="gallery1Module6-1.html">艰辛生活</a></li>
                     <li><a href="gallery1Module6-2.html">工伤故事</a></li>
@@ -48,13 +65,13 @@
 
             <li class="menu-item"><a href="#">二 · 女工展厅</a></li>
             <li class="menu-item"><a href="#">三 · 儿童展厅</a></li>
-            <li class="menu-item"><a href="#">四 · NGO展厅</a></li>
+            <li class="menu-item"><a href="gallery4.html">四 · NGO展厅</a></li>
 
           </ul>
         </nav>
       </div>
 
-      <!--搜索功能未开发-->
+      <!--搜索功能待开发-->
       <div class="search-box">
         <input type="text" class="search-txt" placeholder="请输入搜索内容...">
         <a class="search-btn">
@@ -63,12 +80,15 @@
         </a>
       </div>
     </header>
-
     
     <main>
-     
+      <div class="typing-container">
+        <span class="typewrite anim-typewrite js-typewrite"></span>
+        <a id ="index-button" class="index-button" href="museumGuide.html">探索</a>
+      </div>
     </main>
-  </body>
+    <script src="js/typing-effect.js"></script>
 
-  
+
+  </body>
 </html>

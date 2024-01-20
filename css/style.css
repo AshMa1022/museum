@@ -6,3 +6,49 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
+
+.typing-container {
+  font-family: Source Han Serif CN;
+}
+
+.typewrite {
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 12.9px;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+}
+
+.anim-typewrite {
+  animation: blinkTextCursor 500ms infinite normal;
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+.index-button {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 172px;
+  height: 58.621px;
+  margin: 0 auto;
+  color: white;
+  text-decoration: none;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 2.7px;
+  background-color: #a09090;
+  margin-top: 30px;
+}
+
+.index-button:hover {
+  color: #b20000;
+}

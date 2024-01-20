@@ -3,6 +3,92 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>打工文化艺术博物馆</title>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source Sans 3'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <style>
+      body, html {
+
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+        /*
+        display: flex;
+        flex-direction: column;
+     
+        margin: 0;
+        */
+      }
+
+      main {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
   </head>
-  <body></body>
+
+  <body class="bg">
+    <header class="main-header">
+      <div>
+        <a href="index.html"><img src="images/h-logo.svg" alt="博物馆LOGO" style="width: 180px;"></a>
+      </div>
+
+      <div class="main-nav">
+        <nav>
+          <ul>
+            <li class="menu-item">
+              <a href="#" aria-haspopup="true">一 · 流动的历史</a>
+              <ul class="submenu">
+                <li><a href="gallery1Module1.html">建国初期</a></li>
+                <li><a href="gallery1Module2.html">农村改革</a></li>
+                <li><a href="gallery1Module3.html">离土不离乡</a></li>
+                <li><a href="gallery1Module4.html">务工潮出现</a></li>
+                <li><a href="gallery1Module5.html">管理制度</a></li>
+                <li class="dropdown-second"><a href="#" aria-haspopup="true">艰辛生活 ></a>
+                  <ul class="second-submenu">
+                    <li><a href="gallery1Module6-1.html">艰辛生活</a></li>
+                    <li><a href="gallery1Module6-2.html">工伤故事</a></li>
+                    <li><a href="gallery1Module6-3.html">维权道路</a></li>
+                    <li><a href="gallery1Module6-4.html">重要事件</a></li>
+                  </ul>
+                </li>
+                <li><a href="gallery1Module7.html">NGO诞生</a></li>
+                <li><a href="gallery1Module8.html">政策调整</a></li>
+              </ul>
+            </li>
+
+            <li class="menu-item"><a href="#">二 · 女工展厅</a></li>
+            <li class="menu-item"><a href="#">三 · 儿童展厅</a></li>
+            <li class="menu-item"><a href="gallery4.html">四 · NGO展厅</a></li>
+
+          </ul>
+        </nav>
+      </div>
+
+      <!--搜索功能待开发-->
+      <div class="search-box">
+        <input type="text" class="search-txt" placeholder="请输入搜索内容...">
+        <a class="search-btn">
+          <!--search icon svg-->
+          <svg class="svg-icon search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">A magnifying glass icon.</desc><g class="search-path" fill="none" stroke="#222222"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
+        </a>
+      </div>
+    </header>
+    
+    <main>
+      <div class="typing-container">
+        <span class="typewrite anim-typewrite js-typewrite"></span>
+        <a id ="index-button" class="index-button" href="museumGuide.html">探索</a>
+      </div>
+    </main>
+    <script src="js/typing-effect.js"></script>
+
+
+  </body>
 </html>

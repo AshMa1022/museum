@@ -228,16 +228,15 @@ header {
   font-weight: var(--_17-font-weight);
   line-height: var(--_17-line-height);
   letter-spacing: var(--_17-letter-spacing);
+  width: 370.047px;
 }
 
-/*
 .module-type1 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   overflow: hidden;
 }
-*/
 
 .img-container {
   display: flex;

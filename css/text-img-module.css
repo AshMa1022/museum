@@ -1,0 +1,64 @@
+/* CSS for Text Image Module */
+.text-img-module {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+.text-img-module h2 {
+  margin-top: 0;
+}
+.text-img-module p {
+  color: #222222;
+  text-align: left;
+  font-style: normal;
+  font-family: var(--_15-font-family, "SourceSans3-Regular", sans-serif);
+  font-size: var(--_15-font-size, 15px);
+  line-height: var(--_15-line-height, 21px);
+  font-weight: var(--_15-font-weight, 400);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.text-img-module .text-col2 {
+  column-count: 2;
+  column-gap: 5%;
+}
+.text-img-module .col3 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
+}
+.text-img-module .col-3-1 {
+  width: 30%;
+  /* min-width: 300px; */
+}
+.text-img-module .col-3-2 {
+  width: 65%;
+}
+.text-img-module .img-500-wrapper {
+  max-height: 176px;
+  max-width: 100%;
+  width: 500px;
+  overflow: hidden;
+}
+.text-img-module img {
+  width: 100%;
+}
+
+
+/* Responsive Styles for Tablets */
+@media only screen and (max-width: 1048px) {
+  .text-img-module .img-500-wrapper {
+    min-width: auto;
+    width: 100%;
+  }
+  .text-img-module .col-3-1 {
+    width: 100%;
+    min-width: auto;
+  }
+  .text-img-module p {
+    margin-bottom: 1em;
+  }
+  .text-img-module .col-3-2 {
+    width: 100%;
+  }
+}

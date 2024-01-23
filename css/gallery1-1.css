@@ -40,6 +40,7 @@
 
 body {
   margin: 0px;
+  overflow-x: hidden;
 }
 
 header {
@@ -74,7 +75,6 @@ header {
   top: 50%;
   width: 50%;
   transform: translateY(-50%);
-  z-index: -1;
 }
 
 .gallery-number {
@@ -131,10 +131,11 @@ header {
 .content-container {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .content {
-  max-width: calc(100% - 9em);
+  width: calc(100% - 20em);
 }
 
 /* canva */
@@ -252,4 +253,19 @@ header {
   font-style: var(--_13-font-style);
   font-weight: var(--_13-font-weight);
   line-height: var(--_13-line-height);
+}
+
+/* media query */
+
+@media (max-width: 1035px) {
+  .module-type1 {
+    flex-direction: column; /* 切换为上下布局 */
+    height: auto; /* 自适应高度 */
+    align-items: center;
+  }
+
+  .module-type1 img {
+    max-height: 500px;
+    object-fit: contain;
+  }
 }

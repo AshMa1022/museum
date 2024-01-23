@@ -6,41 +6,296 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>打工文化艺术博物馆</title>
+    <link rel="icon" href="images/icon.svg">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source Sans 3'>
+    <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" type="text/css" href="./css/breadcrumb.css">
+    <link rel="stylesheet" type="text/css" href="./css/guide.css">
+    <style>
+      body {
+
+        box-sizing: border-box;
+      }
+
+      iframe {
+      border: none;
+    }
+
+    /* 遮罩层，用于覆盖页面以显示视频 */
+    .overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      align-items: center;
+      justify-content: center;
+    }
+
+    </style>
   </head>
+
   <body>
+
+    <header class="main-header">
+      <div>
+        <a href="index.html"><img src="images/h-logo.svg" alt="博物馆LOGO" style="width: 180px;"></a>
+      </div>
+
+      <div class="main-nav">
+        <nav>
+          <ul>
+            <li class="menu-item">
+              <a href="#" aria-haspopup="true">一 · 流动的历史</a>
+              <ul class="submenu">
+                <li><a href="gallery1Module1.html">建国初期</a></li>
+                <li><a href="gallery1Module2.html">农村改革</a></li>
+                <li><a href="gallery1Module3.html">离土不离乡</a></li>
+                <li><a href="gallery1Module4.html">务工潮出现</a></li>
+                <li><a href="gallery1Module5.html">管理制度</a></li>
+                <li class="dropdown-second"><a href="#" aria-haspopup="true">艰辛生活 ></a>
+                  <ul class="second-submenu">
+                    <li><a href="gallery1Module6-1.html">艰辛生活</a></li>
+                    <li><a href="gallery1Module6-2.html">工伤故事</a></li>
+                    <li><a href="gallery1Module6-3.html">维权道路</a></li>
+                    <li><a href="gallery1Module6-4.html">重要事件</a></li>
+                  </ul>
+                </li>
+                <li><a href="gallery1Module7.html">NGO诞生</a></li>
+                <li><a href="gallery1Module8.html">政策调整</a></li>
+              </ul>
+            </li>
+
+            <li class="menu-item"><a href="#">二 · 女工展厅</a></li>
+            <li class="menu-item"><a href="#">三 · 儿童展厅</a></li>
+            <li class="menu-item"><a href="gallery4.html">四 · NGO展厅</a></li>
+
+          </ul>
+        </nav>
+      </div>
+
+      <!--搜索功能待开发-->
+      <div class="search-box">
+        <input type="text" class="search-txt" placeholder="请输入搜索内容...">
+        <a class="search-btn">
+          <!--search icon svg-->
+          <svg class="svg-icon search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">A magnifying glass icon.</desc><g class="search-path" fill="none" stroke="#222222"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
+        </a>
+      </div>
+    </header>
+
+    <main>
+
+      <!--crumbs-->
+      <div class="crums">
+        <div class="rectangle-31"></div>
+        <div class="crums-address">
+          <span class="crums-address-span">当前位置：</span>
+          <a href="index.html" class="crums-address-span2">首页&nbsp;/&nbsp;</a>
+          <a class="crums-address-span4">展厅导航</a>
+        </div>
+      </div>
+
+      <!--preface-->
+      <div class="two-part">
+        <div class="text-area">
+          <h1 class="title">前言</h1>
+          <div class="sub-title">
+            <p>
+              改革开放三十年来，中国的工业化、城市化、经济建设飞速发展，这其中离不开我们亿万打工兄弟姐妹们所付出的劳动和贡献。从乡村到城市，流动打工群体是城乡的纽带和桥梁、是推动中国社会前进的新型劳动大军、是中华民族的脊梁。
+            </p>
+              
+              <p>
+                我们希望通过打工文化艺术博物馆来记录和反映我们劳动者自己的文化和历史。因为，没有我们的文化就没有我们的历史，没有我们的历史就没有我们的将来。
+              </p>
+              
+              <p>
+                这也正是我们创办打工文化艺术博物馆和举办这次展览的目的——纪录打工群体的历史变迁，倡导劳动价值的尊重认可。
+              </p>
+
+              <p>
+                打工文化艺术博物馆 2008年5月1日
+              </p>   
+          </div>
+  
+        </div>
+
+        <div class="video-background">
+          <a class="glightbox_video" href="#" id="playButton">
+            <svg width="131" height="131" viewBox="0 0 131 131" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="inner-circle" d="M65 21C40.1488 21 20 41.1488 20 66C20 90.8512 40.1488 111 65 111C89.8512 111 110 90.8512 110 66C110 41.1488 89.8512 21 65 21Z" fill="white"></path>
+            <circle class="outer_circle" cx="65.5" cy="65.5" r="64" stroke="white"></circle>
+            <path class="play" fill-rule="evenodd" clip-rule="evenodd" d="M60 76V57L77 66.7774L60 76Z" fill="#BF2428"></path>
+          </svg>
+          </a>
+          <div class="overlay" id="videoOverlay">
+            <iframe
+              width="800"
+              height="450"
+              src="https://www.youtube.com/embed/-YTa2gnvI8c"
+              title="YouTube video player"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        
+        </div>
+      </div>
+
+      <div class="guide">
+        <h2 class="guide-title">展厅导览</h2>
+        
+        <div class="gallerys-container">
+
+          <!--gallery 1-->
+          <a href="gallery1Module1.html" style=" text-decoration: none;">
+            <div class="gallery">
+              <div class="gallery-title">
+                流动的历史
+                <svg width="11" height="17" viewBox="0 0 11 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.81324 9.06344L3.13267 15.5151C2.81047 15.8262 2.28811 15.8262 1.96595 15.5151L1.18677 14.7626C0.865122 14.452 0.864503 13.9485 1.18539 13.6372L6.47987 8.50005L1.18539 3.36297C0.864503 3.05161 0.865122 2.54818 1.18677 2.23755L1.96595 1.48508C2.28814 1.17392 2.81051 1.17392 3.13267 1.48508L9.81321 7.9367C10.1354 8.24782 10.1354 8.75228 9.81324 9.06344Z" fill="white"/>
+                </svg>
+              </div>
+    
+              <div class="gallery-border">
+                <div style="position: relative;">
+                  <img src="images/guide-gallery1.jpg.png" class="gallery-img first-img" style="position: absolute;">
+                  <img src="images/guide-gallery1-hover.jpg.png" class="gallery-img second-image">
+                </div>
+                
+              <div class="gallery-intro">
+                纵向了解我们的打工群体改革开放三十多年来的形成和发展历程，工友们工作、生活的方方面面以及这一阶段发生的重大事件，感受打工生活的艰辛，分享工友们的情感和诉求
+              </div>
+            </div>
+            </div>
+          </a>
+
+          <!--gallery 2-->
+          <a href="gallery2.html" style=" text-decoration: none;">
+            <div class="gallery">
+              <div class="gallery-title">
+                女工
+                <svg width="11" height="17" viewBox="0 0 11 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.81324 9.06344L3.13267 15.5151C2.81047 15.8262 2.28811 15.8262 1.96595 15.5151L1.18677 14.7626C0.865122 14.452 0.864503 13.9485 1.18539 13.6372L6.47987 8.50005L1.18539 3.36297C0.864503 3.05161 0.865122 2.54818 1.18677 2.23755L1.96595 1.48508C2.28814 1.17392 2.81051 1.17392 3.13267 1.48508L9.81321 7.9367C10.1354 8.24782 10.1354 8.75228 9.81324 9.06344Z" fill="white"/>
+                </svg>
+              </div>
+    
+              <div class="gallery-border">
+                <div style="position: relative;">
+                  <img src="images/guide-gallery2.png" class="gallery-img first-img" style="position: absolute;">
+                  <img src="images/guide-gallery2-hover.jpg.png" class="gallery-img second-image">
+                </div>
+                
+              <div class="gallery-intro">
+                女性打工者由于生理和心理的性别特点，使得她们的整体性格较为脆弱、内敛，忍耐力较强，抗争意识较弱，而且整体教育文化水平较低，因此用人单位普遍愿意招收女工，不仅付给的工资比男工低，而且还易于管理，甚至很多老板和管理人员对女工进行身体和语言的性骚扰
+              </div>
+            </div>
+            </div>
+          </a>
+
+          <!--gallery 3-->
+          <a href="gallery3.html" style=" text-decoration: none;">
+            <div class="gallery">
+              <div class="gallery-title">
+                儿童
+                <svg width="11" height="17" viewBox="0 0 11 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.81324 9.06344L3.13267 15.5151C2.81047 15.8262 2.28811 15.8262 1.96595 15.5151L1.18677 14.7626C0.865122 14.452 0.864503 13.9485 1.18539 13.6372L6.47987 8.50005L1.18539 3.36297C0.864503 3.05161 0.865122 2.54818 1.18677 2.23755L1.96595 1.48508C2.28814 1.17392 2.81051 1.17392 3.13267 1.48508L9.81321 7.9367C10.1354 8.24782 10.1354 8.75228 9.81324 9.06344Z" fill="white"/>
+                </svg>
+              </div>
+    
+                <div class="gallery-border">
+                  <div style="position: relative;">
+                    <img src="images/guide-gallery3.png" class="gallery-img first-img" style="position: absolute;">
+                    <img src="images/guide-gallery3-hover.jpg.png" class="gallery-img second-image">
+                  </div>
+                  
+                <div class="gallery-intro">
+                  打工工友的孩子分为留守儿童和流动儿童。目前全国共有6000多万跟随祖父母在农村老家上学的留守儿童和3000多万跟随父母在父母务工地上学的流动儿童。仅北京每10个孩子中就有3个是流动儿童
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!--gallery 4-->
+          <a href="gallery4.html" style=" text-decoration: none;">
+            <div class="gallery">
+              <div class="gallery-title">
+                NGO
+                <svg width="11" height="17" viewBox="0 0 11 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.81324 9.06344L3.13267 15.5151C2.81047 15.8262 2.28811 15.8262 1.96595 15.5151L1.18677 14.7626C0.865122 14.452 0.864503 13.9485 1.18539 13.6372L6.47987 8.50005L1.18539 3.36297C0.864503 3.05161 0.865122 2.54818 1.18677 2.23755L1.96595 1.48508C2.28814 1.17392 2.81051 1.17392 3.13267 1.48508L9.81321 7.9367C10.1354 8.24782 10.1354 8.75228 9.81324 9.06344Z" fill="white"/>
+                </svg>
+              </div>
+    
+              <div class="gallery-border">
+                <div style="position: relative;">
+                  <img src="images/guide-gallery4.png" class="gallery-img first-img" style="position: absolute;">
+                  <img src="images/guide-gallery4-hover.jpg.png" class="gallery-img second-image">
+                </div>
+                
+              <div class="gallery-intro">
+                NGO作为民间公益组织发挥着社会服务的作用，是对政府职能的有益补充
+              </div>
+            </div>
+            </div>
+          </a>
+          
+          
+        </div>
+      </div>
+    </main>
+
     <footer class="main-footer">
       <div class="footer-container">
+
         <div>
           <h4 class="footer-title">我要捐款</h4>
           <div class="footer-content">
             <div>
               <a href="https://mp.weixin.qq.com/s/JnF4ND5Ef1rSYaKikSvbnw">➔皮村文学小组</a><br>
-              <img src="images/image6.jpg" style="width: 100px;">
+              <img src="images/image6.jpg" style="width: 100px; margin-top: 20px;">
             </div>
             <div>
               <a href="https://mp.weixin.qq.com/s/U3m2NpCIIaselIxenK3LQg">➔同心互惠社工服务中心</a>
               <br>
-              <img src="images/image6.jpg" style="width: 100px;">
+              <img src="images/image6.jpg" style="width: 100px; margin-top: 20px;">
             </div>
           </div>
         </div>
   
         <div>
-          <h4>联系方式</h4>
+          <h4 class="footer-title">联系方式</h4>
+          <ul class="footer-content2">
+            <li>电话： (406) 555-0120</li>
+            <li>邮箱： xingongrenwenxue51@163.com</li>
+            <li>地址：北京朝阳区金盏乡皮村工友之家</li>
+          </ul>
         </div>
   
-        <div>
-          <h4>纪录片</h4>
+        <div style="width: 130px;">
+          <h4 class="footer-title">纪录片</h4>
+          <ul class="footer-content2">
+            <li><a href="https://www.youtube.com/watch?v=1SYYhNB5124&t=3s">野草集</a></li>
+            <li><a href="https://www.youtube.com/watch?v=wF-zXaV0VBQ&t=40s">德志说相声</a></li>
+            <li><a href="https://www.bilibili.com/video/BV17p4y1z7Fy/?vd_source=7077dc60b9219ada2920ec7ab68095a4">性别工作坊</a></li>
+            <li><a href="https://www.bilibili.com/video/BV1Ph4y197k8/?vd_source=7077dc60b9219ada2920ec7ab68095a4">跳舞大叔</a></li>
+          </ul>
         </div>
-  
-        <div>
-          <img src="images/full-logo.svg" style="width: 100px;">
-        </div>
+        
+       
+          <div class="footer-logo">
+            <img src="images/full-logo.svg" style="width: 150px;">
+          </div>
+        
       </div>
       
     </footer>
 
+    <script src="js/videoplay.js"></script>
+
   </body>
 </html>
+
+

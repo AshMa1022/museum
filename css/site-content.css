@@ -1,288 +1,275 @@
 /* Figma Styles of your File */
 :root {
-    /* Colors */
-    --red: #b20000;
-    /* Fonts */
-    --_17-font-family: SourceHanSerifCn-Bold, sans-serif;
-    --_17-font-size: 17px;
-    --_17-line-height: 26px;
-    --_17-font-weight: 700;
-    --_17-font-style: normal;
-    --_38-font-family: SourceHanSerifCn-Bold, sans-serif;
-    --_38-font-size: 38px;
-    --_38-line-height: 55px;
-    --_38-font-weight: 700;
-    --_38-font-style: normal;
-    --_27-font-family: SourceHanSerifCn-Bold, sans-serif;
-    --_27-font-size: 27px;
-    --_27-line-height: 38px;
-    --_27-font-weight: 700;
-    --_27-font-style: normal;
-    --_15-font-family: SourceSans3-Regular, sans-serif;
-    --_15-font-size: 15px;
-    --_15-line-height: 21px;
-    --_15-font-weight: 400;
-    --_15-font-style: normal;
-    --crumbs-font-family: SourceSans3-Regular, sans-serif;
-    --crumbs-font-size: 13px;
-    --crumbs-line-height: 14px;
-    --crumbs-font-weight: 400;
-    --crumbs-font-style: normal;
-    --div-font-family: SourceSans3-Regular, sans-serif;
-    --div-font-size: 13px;
-    --div-line-height: 14px;
-    --div-font-weight: 400;
-    --div-font-style: normal;
-  
-    /* Effects */
-  }
-
+  /* Colors */
+  --red: #b20000;
+  /* Fonts */
+  --_17-font-family: SourceHanSerifCn-Bold, sans-serif;
+  --_17-font-size: 17px;
+  --_17-line-height: 26px;
+  --_17-font-weight: 700;
+  --_17-font-style: normal;
+  --_38-font-family: SourceHanSerifCn-Bold, sans-serif;
+  --_38-font-size: 38px;
+  --_38-line-height: 55px;
+  --_38-font-weight: 700;
+  --_38-font-style: normal;
+  --_27-font-family: SourceHanSerifCn-Bold, sans-serif;
+  --_27-font-size: 27px;
+  --_27-line-height: 38px;
+  --_27-font-weight: 700;
+  --_27-font-style: normal;
+  --_15-font-family: SourceSans3-Regular, sans-serif;
+  --_15-font-size: 15px;
+  --_15-line-height: 21px;
+  --_15-font-weight: 400;
+  --_15-font-style: normal;
+  --crumbs-font-family: SourceSans3-Regular, sans-serif;
+  --crumbs-font-size: 13px;
+  --crumbs-line-height: 14px;
+  --crumbs-font-weight: 400;
+  --crumbs-font-style: normal;
+  --div-font-family: SourceSans3-Regular, sans-serif;
+  --div-font-size: 13px;
+  --div-line-height: 14px;
+  --div-font-weight: 400;
+  --div-font-style: normal;
+  /* Effects */
+}
 
 .site-container {
-    background-color:#ffffff;
-    max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
+  background-color: #ffffff;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .site-content-wrapper {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
-.site-content{
-    max-width: calc(100% - 9em);
+.site-content {
+  max-width: calc(100% - 9em);
 }
 
 @font-face {
-    font-family: 'SourceHanSerifCn-Bold';
-    src: 
-         url('../fonts/SourceHanSerifCN-VF.otf.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/SourceHanSerifSC-VF.ttf') format('truetype'), /* Safari, Android, iOS */
+  font-family: "SourceHanSerifCn-Bold";
+  src: url("../fonts/SourceHanSerifCN-VF.otf.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/SourceHanSerifSC-VF.ttf")
+      format("truetype"); /* Safari, Android, iOS */
 }
-
-
 
 /* CSS for Crumbs */
 .crums {
-    height: 2em;
+  height: 2em;
 }
+
 .rectangle-31 {
-    background: #ffffff;
-    border-style: solid;
-    border-color: rgba(55, 55, 55, 0.4);
-    border-width: 1px 0px 0px 0px;
-    height: 0.5em;
+  background: #ffffff;
+  border-top: 1px solid rgba(55, 55, 55, 0.4);
+  height: 0.5em;
 }
+
 .crums-address {
-    text-align: left;
-    font-family: var(--crumbs-font-family, "SourceSans3-Regular", sans-serif);
-    font-size: var(--crumbs-font-size, 13px);
-    line-height: var(--crumbs-line-height, 14px);
-    font-weight: var(--crumbs-font-weight, 400);
-    display: flex;
-    justify-content: flex-start;
+  text-align: left;
+  font-family: var(--crumbs-font-family, "SourceSans3-Regular", sans-serif);
+  font-size: var(--crumbs-font-size, 13px);
+  line-height: var(--crumbs-line-height, 14px);
+  font-weight: var(--crumbs-font-weight, 400);
+  display: flex;
+  justify-content: flex-start;
 }
 .crums-address-span {
-    color: #222222;
-    font-family: var(--crumbs-font-family, "SourceSans3-Regular", sans-serif);
-    font-size: var(--crumbs-font-size, 13px);
-    line-height: var(--crumbs-line-height, 14px);
-    font-weight: var(--crumbs-font-weight, 400);
+  color: #222222;
+  font-family: var(--crumbs-font-family, "SourceSans3-Regular", sans-serif);
+  font-size: var(--crumbs-font-size, 13px);
+  line-height: var(--crumbs-line-height, 14px);
+  font-weight: var(--crumbs-font-weight, 400);
 }
 .crums-address-span2 {
-    color: var(--red, #b20000);
-    font-family: var(--crumbs-font-family, "SourceSans3-Regular", sans-serif);
-    font-size: var(--crumbs-font-size, 13px);
-    line-height: var(--crumbs-line-height, 14px);
-    font-weight: var(--crumbs-font-weight, 400);
+  color: var(--red, #b20000);
+  font-family: var(--crumbs-font-family, "SourceSans3-Regular", sans-serif);
+  font-size: var(--crumbs-font-size, 13px);
+  line-height: var(--crumbs-line-height, 14px);
+  font-weight: var(--crumbs-font-weight, 400);
 }
-
-
 
 /* CSS for Banner */
 .banner {
-    position: relative;
-    /* height: 300px; */
-    left: 0;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 130px;
+  position: relative;
+  /* height: 300px; */
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 130px;
 }
 .banner .img-wrapper {
-    height: 100%;
-    overflow: hidden;
+  height: 100%;
+  overflow: hidden;
 }
 .banner img {
-    width: 100%;
-    vertical-align: middle;
+  width: 100%;
+  vertical-align: middle;
 }
 .banner-content {
-    background: var(--red, #b20000);
-    width: 360px;
-    height: 56px;
-    position: absolute;
+  background: var(--red, #b20000);
+  width: 360px;
+  height: 56px;
+  position: absolute;
 }
 h1 {
-    color: #ffffff;
-    text-align: center;
-    font-family: var(--_27-font-family, sans-serif);
-    font-size: var(--_27-font-size, 27px);
-    line-height: var(--_27-line-height, 38px);
-    font-weight: var(--_27-font-weight, 700);
-    position: relative;
-    height: 100%;
-    width: 100%;
-    margin-top: 0;
-    margin-bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  color: #ffffff;
+  text-align: center;
+  font-family: var(--_27-font-family, sans-serif);
+  font-size: var(--_27-font-size, 27px);
+  line-height: var(--_27-line-height, 38px);
+  font-weight: var(--_27-font-weight, 700);
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-
 
 /* CSS for Text Image Module */
 .text-img-module {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
 }
 h2 {
-    color: var(--red, #b20000);
-    text-align: left;
-    font-family: var(--_27-font-family, "SourceHanSerifCn-Bold", sans-serif);
-    font-size: var(--_27-font-size, 27px);
-    margin-bottom: 0;
-    margin-top: 0;
+  color: var(--red, #b20000);
+  text-align: left;
+  font-family: var(--_27-font-family, "SourceHanSerifCn-Bold", sans-serif);
+  font-size: var(--_27-font-size, 27px);
+  margin-bottom: 0;
+  margin-top: 0;
 }
 .h2-underline {
-    /* background: rgba(217, 217, 217, 0); */
-    border-style: solid;
-    border-color: var(--red, #b20000);
-    border-width: 0px 0px 2px 0px;
-    flex-shrink: 0;
-    width: 100%;
-    height: 5px;
-    position: relative;
-    margin-bottom: 1.5em;
-  }
+  /* background: rgba(217, 217, 217, 0); */
+  border-style: solid;
+  border-color: var(--red, #b20000);
+  border-width: 0px 0px 2px 0px;
+  flex-shrink: 0;
+  width: 100%;
+  height: 5px;
+  position: relative;
+  margin-bottom: 1.5em;
+}
 
 .text-img-module p {
-    color: #222222;
-    text-align: left;
-    font-style: normal;
-    font-family: var(--_15-font-family, "SourceSans3-Regular", sans-serif);
-    font-size: var(--_15-font-size, 15px);
-    line-height: var(--_15-line-height, 21px);
-    font-weight: var(--_15-font-weight, 400);
-    margin-top: 0;
-    margin-bottom: 0;
+  color: #222222;
+  text-align: left;
+  font-style: normal;
+  font-family: var(--_15-font-family, "SourceSans3-Regular", sans-serif);
+  font-size: var(--_15-font-size, 15px);
+  line-height: var(--_15-line-height, 21px);
+  font-weight: var(--_15-font-weight, 400);
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .text-img-module .text-col2 {
-    column-count: 2;
-    column-gap: 5%;
+  column-count: 2;
+  column-gap: 5%;
 }
 .text-img-module .col3 {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
 }
 .text-img-module .col-3-1 {
-    width: 30%;
-    /* min-width: 300px; */
+  width: 30%;
+  /* min-width: 300px; */
 }
 .text-img-module .col-3-2 {
-    width: 65%;
+  width: 65%;
 }
 .text-img-module .img-500-wrapper {
-    max-height: 176px;
-    max-width: 100%;
-    width: 500px;
-    overflow: hidden;
+  max-height: 176px;
+  max-width: 100%;
+  width: 500px;
+  overflow: hidden;
 }
-.text-img-module img{
-    width: 100%;
+.text-img-module img {
+  width: 100%;
 }
-
 
 /* CSS for Navigation Footer */
-.nav-footer{
-    margin-top: 71px;
-    margin-bottom: 71px;
-    margin-left: 60px;
-    margin-right: 60px;
-    display: flex;
-    /* flex-direction: column; */
-    flex-wrap: wrap;
+.nav-footer {
+  margin-top: 71px;
+  margin-bottom: 71px;
+  margin-left: 60px;
+  margin-right: 60px;
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
 }
-.nav-footer .nav-btn{
-    width: 25%;
-    height: 72px;
-    flex-shrink: 0;
-    background: #A09090;
-    display: flex;
-    justify-content: center;
+.nav-footer .nav-btn {
+  width: 25%;
+  height: 72px;
+  flex-shrink: 0;
+  background: #a09090;
+  display: flex;
+  justify-content: center;
 }
-.nav-footer .nav-btn:hover{
-    background: var(--red, #b20000);
+.nav-footer .nav-btn:hover {
+  background: var(--red, #b20000);
 }
-.nav-footer .nav-btn p{
-    text-align: center;
-    color: #ffffff;
-    margin-top: 0;
-    margin-bottom: 0;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    font-family: var(--_17-font-family, SourceHanSerifCn-Bold, sans-serif);
-    font-size: var(--_17-font-size, 17px);
-    font-weight: var(--_17-font-weight, 700);
+.nav-footer .nav-btn p {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-family: var(--_17-font-family, SourceHanSerifCn-Bold, sans-serif);
+  font-size: var(--_17-font-size, 17px);
+  font-weight: var(--_17-font-weight, 700);
 }
-.nav-footer .current-page{
-    /* width: auto; */
-    display: flex;
-    width: 50%;
-    height: 72px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.nav-footer .current-page {
+  /* width: auto; */
+  display: flex;
+  width: 50%;
+  height: 72px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.nav-footer .current-page p{
-    flex-shrink: 0;
-    font-family: var(--_17-font-family, SourceHanSerifCn-Bold, sans-serif);
-    font-size: var(--_17-font-size, 17px);
-    font-weight: var(--_17-font-weight, 700);
-    color: #000;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 0;
+.nav-footer .current-page p {
+  flex-shrink: 0;
+  font-family: var(--_17-font-family, SourceHanSerifCn-Bold, sans-serif);
+  font-size: var(--_17-font-size, 17px);
+  font-weight: var(--_17-font-weight, 700);
+  color: #000;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .nav-footer a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-
-
 /* Responsive Styles for Tablets */
- @media only screen and (max-width: 1048px) {
-    .text-img-module .img-500-wrapper {
-        min-width: auto;
-        width: 100%;
-    }
-    .text-img-module .col-3-1 {
-        width: 100%;
-        min-width: auto;
-    }
-    .text-img-module p {
-        margin-bottom: 1em;
-    }
-    .text-img-module .col-3-2 {
-        width: 100%;
-    }
- }
-  
-
+@media only screen and (max-width: 1048px) {
+  .text-img-module .img-500-wrapper {
+    min-width: auto;
+    width: 100%;
+  }
+  .text-img-module .col-3-1 {
+    width: 100%;
+    min-width: auto;
+  }
+  .text-img-module p {
+    margin-bottom: 1em;
+  }
+  .text-img-module .col-3-2 {
+    width: 100%;
+  }
+}

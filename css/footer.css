@@ -8,18 +8,60 @@
   display: flex;
   align-items: flex-start;
   gap: 10px;
-  display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-title {
+  border-bottom: 1px solid #b10200;
+  color: #b10200;
+  font-family: "Source Han Serif CN";
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 26px; /* 152.941% */
+  letter-spacing: 0.85px;
 }
 
 .footer-content {
   display: flex;
   flex-direction: row;
   gap: 30px;
+  font-family: "Source Sans 3";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21px;
 }
 
-.footer-title {
-  border-bottom: 1px solid #b10200;
+.footer-content a,
+.footer-content2 a {
   color: #222;
+}
+
+.footer-content a:hover,
+.footer-content2 a:hover {
+  color: #b10200;
+}
+
+.footer-content2 {
+  list-style: none;
+  padding-left: 0px;
   font-family: "Source Sans 3";
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.footer-logo {
+  display: flex;
+  align-self: center;
+}
+
+/* media query */
+
+@media (max-width: 500px) {
+  .footer-container {
+    flex-direction: column; /* 切换为上下布局 */
+    align-items: center;
+    justify-content: center; /* 在主轴上居中 */
+  }
 }

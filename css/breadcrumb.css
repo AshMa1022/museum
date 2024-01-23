@@ -1,0 +1,50 @@
+:root {
+  /* Colors */
+  --red: #b20000;
+  /* Fonts */
+  --crumbs-font-family: "Source Sans 3", sans-serif;
+  --crumbs-font-size: 13px;
+  --crumbs-line-height: 14px;
+  --crumbs-font-weight: 400;
+  --crumbs-font-style: normal;
+}
+
+.crums {
+  height: 2em;
+}
+
+.rectangle-31 {
+  background: #ffffff;
+  border-top: 1px solid rgba(55, 55, 55, 0.4);
+  height: 0.5em;
+}
+
+.crums-address {
+  text-align: left;
+  font-family: var(--crumbs-font-family);
+  font-size: var(--crumbs-font-size);
+  line-height: var(--crumbs-line-height);
+  font-weight: var(--crumbs-font-weight);
+  display: flex;
+  justify-content: flex-start;
+}
+
+.crums-address-span {
+  color: #222222;
+}
+
+.crums-address-span2,
+.crums-address-span3 {
+  color: #222222;
+  text-decoration: none;
+}
+
+.crums-address-span4 {
+  color: var(--red);
+  text-decoration: none;
+}
+
+.crums-address-span2:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}

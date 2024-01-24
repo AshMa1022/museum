@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>打工文化艺术博物馆</title>
     <link rel="icon" href="images/icon.svg">
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source Sans 3'>
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" type="text/css" href="./css/breadcrumb.css">
@@ -40,52 +39,7 @@
 
   <body>
 
-    <header class="main-header">
-      <div>
-        <a href="index.html"><img src="images/h-logo.svg" alt="博物馆LOGO" style="width: 180px;"></a>
-      </div>
-
-      <div class="main-nav">
-        <nav>
-          <ul>
-            <li class="menu-item">
-              <a href="#" aria-haspopup="true">一 · 流动的历史</a>
-              <ul class="submenu">
-                <li><a href="gallery1Module1.html">建国初期</a></li>
-                <li><a href="gallery1Module2.html">农村改革</a></li>
-                <li><a href="gallery1Module3.html">离土不离乡</a></li>
-                <li><a href="gallery1Module4.html">务工潮出现</a></li>
-                <li><a href="gallery1Module5.html">管理制度</a></li>
-                <li class="dropdown-second"><a href="#" aria-haspopup="true">艰辛生活 ></a>
-                  <ul class="second-submenu">
-                    <li><a href="gallery1Module6-1.html">艰辛生活</a></li>
-                    <li><a href="gallery1Module6-2.html">工伤故事</a></li>
-                    <li><a href="gallery1Module6-3.html">维权道路</a></li>
-                    <li><a href="gallery1Module6-4.html">重要事件</a></li>
-                  </ul>
-                </li>
-                <li><a href="gallery1Module7.html">NGO诞生</a></li>
-                <li><a href="gallery1Module8.html">政策调整</a></li>
-              </ul>
-            </li>
-
-            <li class="menu-item"><a href="#">二 · 女工展厅</a></li>
-            <li class="menu-item"><a href="#">三 · 儿童展厅</a></li>
-            <li class="menu-item"><a href="gallery4.html">四 · NGO展厅</a></li>
-
-          </ul>
-        </nav>
-      </div>
-
-      <!--搜索功能待开发-->
-      <div class="search-box">
-        <input type="text" class="search-txt" placeholder="请输入搜索内容...">
-        <a class="search-btn">
-          <!--search icon svg-->
-          <svg class="svg-icon search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">A magnifying glass icon.</desc><g class="search-path" fill="none" stroke="#222222"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
-        </a>
-      </div>
-    </header>
+    <div id="headerContainer"></div>
 
     <main>
 
@@ -264,53 +218,25 @@
       </div>
     </main>
 
-    <footer class="main-footer">
-      <div class="footer-container">
-
-        <div>
-          <h4 class="footer-title">我要捐款</h4>
-          <div class="footer-content">
-            <div>
-              <a href="https://mp.weixin.qq.com/s/JnF4ND5Ef1rSYaKikSvbnw">➔皮村文学小组</a><br>
-              <img src="images/image6.jpg" style="width: 100px; margin-top: 20px;">
-            </div>
-            <div>
-              <a href="https://mp.weixin.qq.com/s/U3m2NpCIIaselIxenK3LQg">➔同心互惠社工服务中心</a>
-              <br>
-              <img src="images/image6.jpg" style="width: 100px; margin-top: 20px;">
-            </div>
-          </div>
-        </div>
-  
-        <div>
-          <h4 class="footer-title">联系方式</h4>
-          <ul class="footer-content2">
-            <li>电话： (406) 555-0120</li>
-            <li>邮箱： xingongrenwenxue51@163.com</li>
-            <li>地址：北京朝阳区金盏乡皮村工友之家</li>
-          </ul>
-        </div>
-  
-        <div style="width: 130px;">
-          <h4 class="footer-title">纪录片</h4>
-          <ul class="footer-content2">
-            <li><a href="https://www.youtube.com/watch?v=1SYYhNB5124&t=3s">野草集</a></li>
-            <li><a href="https://www.youtube.com/watch?v=wF-zXaV0VBQ&t=40s">德志说相声</a></li>
-            <li><a href="https://www.bilibili.com/video/BV17p4y1z7Fy/?vd_source=7077dc60b9219ada2920ec7ab68095a4">性别工作坊</a></li>
-            <li><a href="https://www.bilibili.com/video/BV1Ph4y197k8/?vd_source=7077dc60b9219ada2920ec7ab68095a4">跳舞大叔</a></li>
-          </ul>
-        </div>
-        
-       
-          <div class="footer-logo">
-            <img src="images/full-logo.svg" style="width: 150px;">
-          </div>
-        
-      </div>
-      
-    </footer>
+    <div id="footerContainer"></div>
 
     <script src="js/videoplay.js"></script>
+    <script>
+      // Use fetch to load the header content
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById("headerContainer").innerHTML = html;
+        });
+    </script>
+    <script>
+      // Use fetch to load the footer content
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById("footerContainer").innerHTML = html;
+        });
+    </script>
 
   </body>
 </html>

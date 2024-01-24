@@ -1,3 +1,20 @@
+:root {
+  --_17-font-family: SourceHanSerifCn-Bold, sans-serif;
+  --_15-font-family: SourceSans3-Regular, sans-serif;
+}
+
+@font-face {
+  font-family: "SourceHanSerifCn-Bold";
+  src: url("../fonts/SourceHanSerifCN-VF.otf.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/SourceHanSerifSC-VF.ttf")
+      format("truetype"); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: "SourceSans3-Regular";
+  src: url("../fonts/NotoSansSC-VariableFont_wght.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
 .main-header {
   display: flex;
   align-items: center;
@@ -30,7 +47,7 @@
   text-align: center;
   align-items: center;
   width: 150px;
-  font-family: Source Han Serif CN;
+  font-family: var(--_17-font-family);
   line-height: 26px;
   font-weight: 700;
   font-size: 17px;
@@ -65,7 +82,7 @@
 .submenu {
   display: none;
   text-align: center;
-  font-family: "Source Sans 3";
+  font-family: var(--_15-font-family);
   position: absolute;
   font-size: 15px;
   font-weight: 400;

@@ -1,13 +1,4 @@
 /* CSS for Text Image Module */
-.site-content-wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-.site-content {
-  max-width: calc(100% - 20em);
-}
-
 .text-img-module {
   display: flex;
   flex-direction: column;

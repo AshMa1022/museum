@@ -156,18 +156,3 @@ body {
 }
 
 */
-
-/* media query */
-
-@media (max-width: 1035px) {
-  .module-type1 {
-    flex-direction: column; /* 切换为上下布局 */
-    height: auto; /* 自适应高度 */
-    align-items: center;
-  }
-
-  .module-type1 img {
-    max-height: 500px;
-    object-fit: contain;
-  }
-}

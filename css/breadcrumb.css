@@ -1,19 +1,3 @@
-:root {
-  /* Colors */
-  --red: #b20000;
-  /* Fonts */
-  --crumbs-font-family: SourceSans3-Regular, sans-serif;
-  --crumbs-font-size: 13px;
-  --crumbs-line-height: 14px;
-  --crumbs-font-weight: 400;
-  --crumbs-font-style: normal;
-}
-
-@font-face {
-  font-family: "SourceSans3-Regular";
-  src: url("../fonts/NotoSansSC-VariableFont_wght.ttf") format("truetype"); /* Safari, Android, iOS */
-}
-
 .crums {
   height: 2em;
 }

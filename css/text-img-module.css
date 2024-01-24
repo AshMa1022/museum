@@ -1,4 +1,13 @@
 /* CSS for Text Image Module */
+.site-content-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.site-content {
+  max-width: calc(100% - 20em);
+}
+
 .text-img-module {
   display: flex;
   flex-direction: column;
@@ -6,6 +15,17 @@
 }
 .text-img-module h2 {
   margin-top: 0;
+  color: var(--red, #b20000);
+  text-align: left;
+  display: flex;
+  font-family: var(--_27-font-family);
+  font-size: var(--_27-font-size);
+  font-style: var(--_27-font-style);
+  font-weight: var(--_27-font-weight);
+  line-height: var(--_27-line-height);
+  letter-spacing: var(--_27-letter-spacing);
+  padding-bottom: 10px;
+  border-bottom: 2px solid #b20000;
 }
 .text-img-module p {
   color: #222222;
@@ -43,7 +63,6 @@
 .text-img-module img {
   width: 100%;
 }
-
 
 /* Responsive Styles for Tablets */
 @media only screen and (max-width: 1048px) {

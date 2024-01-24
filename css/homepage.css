@@ -1,14 +1,3 @@
-:root {
-  --_typewrite-font-family: SourceHanSerifCn-Bold, sans-serif;
-}
-
-@font-face {
-  font-family: "SourceHanSerifCn-Bold";
-  src: url("../fonts/SourceHanSerifCN-VF.otf.woff2") format("woff2"),
-    /* Super Modern Browsers */ url("../fonts/SourceHanSerifSC-VF.ttf")
-      format("truetype"); /* Safari, Android, iOS */
-}
-
 .bg {
   background-image: url("../images/entrance-4.png");
   height: 100%;

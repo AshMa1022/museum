@@ -4,7 +4,7 @@
   以此类推
 -->
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,9 +12,12 @@
     <link rel="icon" href="images/icon.svg" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="./css/font.css" />
     <link rel="stylesheet" href="./css/gallery1-1.css" />
     <link rel="stylesheet" type="text/css" href="./css/breadcrumb.css" />
     <link rel="stylesheet" type="text/css" href="./css/nav-footer.css" />
+    <link rel="stylesheet" type="text/css" href="./css/banner.css" />
+    <link rel="stylesheet" type="text/css" href="./css/text-img-module-2.css" />
   </head>
 
   <body>
@@ -62,7 +65,7 @@
       </div>
 
       <!--banner-->
-      <div class="banner">
+      <div class="banner" style="margin-top: 130px">
         <div class="img-wrapper">
           <img class="banner-img" src="images/gallery1/1-1-banner.png" />
         </div>
@@ -71,6 +74,7 @@
         </div>
       </div>
 
+      <!-- 正文 -->
       <div class="content-container">
         <div class="content">
           <!--
@@ -176,32 +180,30 @@
       <!--人口流动module-->
       <div class="content-container">
         <div class="content">
-          <div class="canva">
+          <div class="text-img-module">
             <h2>人口流动</h2>
-            <div class="text-img-module">
-              <div class="module-type1">
-                <div>
-                  <p style="margin-top: 0px">
-                    新中国建立后大规模的工业建设使城市对劳动力的需求急剧增长，农村人口不断涌入城市。
-                    1953年中国城镇人口从 1949年的5765
-                    万人增加到7725万人，城镇人口占全国总人口的比例从10.6%上升到13.3%。
-                    <br />
-                    城镇人口的增加，加剧了城市粮食、住房、交通、就医、就学、就业等的紧张。
-                    为此，政务院在1953年4月发布《关于劝止农民盲目流入城市的指示》，提出对进城农民，
-                    除有工矿企业或建筑公司正式文件证明其为预约工或合同工者外，均不得开给介绍证件。对进城农民，除确实需要的，要劝其还乡。
-                  </p>
-                </div>
+            <div class="module-type1">
+              <div>
+                <p style="margin-top: 0px">
+                  新中国建立后大规模的工业建设使城市对劳动力的需求急剧增长，农村人口不断涌入城市。
+                  1953年中国城镇人口从 1949年的5765
+                  万人增加到7725万人，城镇人口占全国总人口的比例从10.6%上升到13.3%。
+                  <br />
+                  城镇人口的增加，加剧了城市粮食、住房、交通、就医、就学、就业等的紧张。
+                  为此，政务院在1953年4月发布《关于劝止农民盲目流入城市的指示》，提出对进城农民，
+                  除有工矿企业或建筑公司正式文件证明其为预约工或合同工者外，均不得开给介绍证件。对进城农民，除确实需要的，要劝其还乡。
+                </p>
+              </div>
 
-                <div class="img-container">
-                  <div>
-                    <img
-                      src="images/gallery1/1-1-公共食堂.png"
-                      alt="1-1-公共食堂"
-                    />
-                  </div>
-                  <div class="caption">
-                    <span>公社食堂</span>
-                  </div>
+              <div class="img-container">
+                <div>
+                  <img
+                    src="images/gallery1/1-1-公共食堂.png"
+                    alt="1-1-公共食堂"
+                  />
+                </div>
+                <div class="caption">
+                  <span>公社食堂</span>
                 </div>
               </div>
             </div>
@@ -282,9 +284,9 @@
           <p>下一篇：农村改革</p>
         </a>
       </div>
-
-      <div id="footerContainer"></div>
     </main>
+
+    <div id="footerContainer"></div>
 
     <script src="js/parallax.js"></script>
     <script>

@@ -30,6 +30,7 @@
   font-size: var(--_27-font-size, 27px);
   line-height: var(--_27-line-height, 38px);
   font-weight: var(--_27-font-weight, 700);
+  letter-spacing: var(--_27-letter-spacing);
   position: relative;
   height: 100%;
   width: 100%;

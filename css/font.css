@@ -1,0 +1,73 @@
+:root {
+  /* Colors */
+  --red: #b20000;
+  /* Fonts */
+  --_typewrite-font-family: SourceHanSerifCn-Bold, sans-serif;
+  --_13-font-family: SourceSans3-Regular, sans-serif;
+  --_13-font-size: 13px;
+  --_13-font-style: normal;
+  --_13-font-weight: 400;
+  --_13-line-height: 14px;
+  --_17-font-family: SourceHanSerifCn-Bold, sans-serif;
+  --_17-font-size: 17px;
+  --_17-line-height: 26px;
+  --_17-font-weight: 700;
+  --_17-font-style: normal;
+  --_17-letter-spacing: 0.85px;
+  --_38-font-family: SourceHanSerifCn-Bold, sans-serif;
+  --_38-font-size: 38px;
+  --_38-line-height: 55px;
+  --_38-font-weight: 700;
+  --_38-font-style: normal;
+  --_38-letter-spacing: 9.5px;
+  --_27-font-family: SourceHanSerifCn-Bold, sans-serif;
+  --_27-font-size: 27px;
+  --_27-line-height: 38px;
+  --_27-font-weight: 700;
+  --_27-font-style: normal;
+  --_27-letter-spacing: 2.7px;
+  --_15-font-family: SourceSans3-Regular, sans-serif;
+  --_15-font-size: 15px;
+  --_15-line-height: 21px;
+  --_15-font-weight: 400;
+  --_15-font-style: normal;
+  --crumbs-font-family: SourceSans3-Regular, sans-serif;
+  --crumbs-font-size: 13px;
+  --crumbs-line-height: 14px;
+  --crumbs-font-weight: 400;
+  --crumbs-font-style: normal;
+  --div-font-family: SourceSans3-Regular, sans-serif;
+  --div-font-size: 13px;
+  --div-line-height: 14px;
+  --div-font-weight: 400;
+  --div-font-style: normal;
+  /* Effects */
+}
+
+@font-face {
+  font-family: "SourceHanSerifCn-Bold";
+  src: url("../fonts/SourceHanSerifCN-VF.otf.woff2") format("woff2");
+  /* Super Modern Browsers */
+}
+
+@font-face {
+  font-family: "SourceSans3-Regular";
+  src: url("../fonts/NotoSansSC-VariableFont_wght.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
+/* move to text-img-module h2 {}
+h2 {
+  color: var(--red, #b20000);
+  text-align: left;
+  display: flex;
+  font-family: var(--_27-font-family);
+  font-size: var(--_27-font-size);
+  font-style: var(--_27-font-style);
+  font-weight: var(--_27-font-weight);
+  line-height: var(--_27-line-height);
+  letter-spacing: var(--_27-letter-spacing);
+  padding-bottom: 10px;
+  border-bottom: 2px solid #b20000;
+}
+
+*/

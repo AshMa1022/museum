@@ -10,6 +10,14 @@
   justify-content: center;
 }
 .site-content {
-  max-width: calc(100% - 20em);
+  padding-left: 10em;
+  padding-right: 10em;
 }
 
+/* Responsive Styles for Tablets */
+@media (max-width: 1048px) {
+  .site-content {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}

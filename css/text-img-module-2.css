@@ -7,7 +7,7 @@
 }
 
 .content {
-  width: calc(100% - 20em);
+  width: calc(100% - 11em);
 }
 
 /* text image module with caption version */
@@ -29,11 +29,17 @@
   border-bottom: 2px solid #b20000;
   padding-bottom: 5px;
   margin-bottom: 50px;
+  margin-top: 0px;
 }
 
 .module-type1 {
   display: flex;
   gap: 3%;
+}
+
+.module-type2 {
+  display: flex;
+  flex-direction: column;
 }
 
 .module-type1 p {
@@ -44,6 +50,7 @@
   font-weight: var(--_15-font-weight);
   line-height: var(--_15-line-height);
   width: 370.047px;
+  margin-top: 0px;
 }
 
 .module-type1 img {
@@ -67,6 +74,31 @@
   font-style: var(--_13-font-style);
   font-weight: var(--_13-font-weight);
   line-height: var(--_13-line-height);
+}
+
+.table-Foxconn {
+  margin-top: 50px;
+  border-collapse: collapse; /* 合并表格边框 */
+  width: 100%; /* 表格宽度占满父容器 */
+  font-family: var(--_15-font-family);
+  font-size: var(--_15-font-size);
+  font-style: var(--_15-font-style);
+  font-weight: var(--_15-font-weight);
+  line-height: var(--_15-line-height);
+}
+
+.table-Foxconn td {
+  text-align: left; /* 文字居中 */
+}
+
+.table-Foxconn td:nth-child(2) {
+  padding-left: 85px;
+  vertical-align: top;
+}
+
+.table-Foxconn td:nth-child(1) {
+  padding-bottom: 43px;
+  width: 293px;
 }
 
 /* media query */

@@ -23,60 +23,64 @@
   */
 
 .display-case {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
-    justify-items: center;
-    margin: auto;
-    padding-bottom: 10em;
-  }
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  justify-items: center;
+  margin: auto;
+  padding-bottom: 10em;
+}
 
-  .display-case-wrapper {
-    background-color: var(--red, #b20000);
-    width: 100%;
-  }
+.display-case-wrapper {
+  background-color: var(--red, #b20000);
+  width: 100%;
+}
 
-  .display-case-title {
-    padding: 40px;
-    grid-column: 1 / -1;
-    text-align: center;
-    color: white;
-  }
+.display-case-title {
+  padding: 40px;
+  grid-column: 1 / -1;
+  text-align: center;
+  color: white;
+}
 
-  .display-case-exhibit {
-    width: 215px;
-    background-color: #d9d9d9;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+.display-case-exhibit {
+  width: 215px;
+  background-color: #d9d9d9;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-  .display-case-exhibit.bigger {
-    grid-column: 1 / -1;
-    width: 80%;
-  }
+.display-case-exhibit.bigger {
+  grid-column: 1 / -1;
+  width: 80%;
+}
 
-  .display-case-img-container {
-    margin: 20px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-  }
+.display-case-img-container {
+  margin: 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
 
-  .display-case-exhibit.bigger .display-case-img-container {
-    margin: 50px;
-    min-width: 50%;
-  }
+.display-case-exhibit.bigger .display-case-img-container {
+  margin: 50px;
+  min-width: 50%;
+}
 
-  .display-case-img {
-    width: 100%;
-    height: auto;
-  }
+.display-case-img {
+  width: 100%;
+  height: auto;
+}
 
-  .display-case-exhibit:not(.bigger):hover .display-case-img, 
-  .display-case-exhibit:not(.bigger):hover .display-case-text {
-    opacity: 0.6;
-  }
+.display-case-exhibit:hover {
+  cursor: pointer;
+}
+
+.display-case-exhibit:not(.bigger):hover .display-case-img,
+.display-case-exhibit:not(.bigger):hover .display-case-text {
+  opacity: 0.6;
+}

@@ -8,16 +8,11 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-bottom: 5em;
 }
 .site-content {
-  padding-left: 10em;
-  padding-right: 10em;
+  width: 100%;
 }
-
-/* Responsive Styles for Tablets */
-@media (max-width: 1048px) {
-  .site-content {
-    padding-left: 15%;
-    padding-right: 15%;
-  }
+.site-content > div {
+  margin-bottom: 100px;
 }

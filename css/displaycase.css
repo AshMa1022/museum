@@ -26,7 +26,7 @@
   width: 100%;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
+  column-gap: 15px;
   justify-items: center;
   margin: auto;
   padding-bottom: 10em;
@@ -38,7 +38,9 @@
 }
 
 .display-case-title {
-  padding: 40px;
+  margin: 23px;
+  padding: 0;
+  letter-spacing: .2rem;
   grid-column: 1 / -1;
   text-align: center;
   color: white;
@@ -46,6 +48,7 @@
 
 .display-case-exhibit {
   width: 215px;
+  margin-bottom: 19px;
   background-color: #d9d9d9;
   text-align: center;
   display: flex;
@@ -83,4 +86,12 @@
 .display-case-exhibit:not(.bigger):hover .display-case-img,
 .display-case-exhibit:not(.bigger):hover .display-case-text {
   opacity: 0.6;
+}
+
+.display-case-text {
+  font-size: 10px;
+}
+
+h2.display-case-title {
+  font-size: 27px;
 }

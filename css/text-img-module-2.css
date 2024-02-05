@@ -32,6 +32,14 @@
   margin-top: 0px;
 }
 
+.callout {
+  font-family: var(--_17-font-family, sans-serif);
+  font-size: var(--_17-font-size);
+  line-height: var(--_17-line-height);
+  font-weight: var(--_17-font-weight);
+  margin-bottom: 1em;
+}
+
 .module-type1 {
   display: flex;
   gap: 3%;

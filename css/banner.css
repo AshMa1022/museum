@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 130px;
+  margin-bottom: 200px;
 }
 .banner .img-wrapper {
   height: 100%;
@@ -23,6 +23,15 @@
   height: 56px;
   position: absolute;
 }
+
+.banner-content.wider {
+  width: 418px;
+}
+
+.banner-content.wider2 {
+  width: 470px;
+}
+
 .banner h1 {
   color: #ffffff;
   text-align: center;

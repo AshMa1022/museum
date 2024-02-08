@@ -9,7 +9,8 @@
 
 /* All Text Styles*/
 .text-img-module h2 {
-  margin-top: 0px;
+  margin-top: 0;
+  padding-bottom: 16px;
   margin-bottom: 0.5em;
   color: var(--red, #b20000);
   text-align: left;

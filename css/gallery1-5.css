@@ -16,3 +16,6 @@
 .site-content > div {
   margin-bottom: 100px;
 }
+.site-content > div.display-case-exhibit {
+  margin-bottom: 0;
+}

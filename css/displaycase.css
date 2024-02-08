@@ -23,13 +23,16 @@
   */
 
 .display-case {
+  padding-left: 10%;
+  padding-right: 10%;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   column-gap: 15px;
+  row-gap: 21px;
   justify-items: center;
   margin: auto;
-  padding-bottom: 10em;
+  padding-bottom: 19px;
 }
 
 .display-case-wrapper {
@@ -48,7 +51,6 @@
 }
 
 .display-case-exhibit {
-  width: 215px;
   margin-bottom: 19px;
   background-color: #d9d9d9;
   text-align: center;

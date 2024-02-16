@@ -25,20 +25,28 @@
 .display-case {
   padding-left: 10%;
   padding-right: 10%;
-  width: 100%;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   column-gap: 15px;
   row-gap: 21px;
   justify-items: center;
-  margin: auto;
   padding-bottom: 19px;
+  max-width: 1200px; 
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+
 }
 
 .display-case-wrapper {
   background-color: var(--red, #b20000);
-  width: 100%;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 120px;
+}
+
+.display-case-wrapper::before {
+  background-color: var(--red, #b20000);
 }
 
 .display-case-title {
@@ -82,6 +90,15 @@
 .display-case-img {
   width: 100%;
   height: auto;
+  max-height: 400px;
+}
+
+.display-case-exhibit.bigger .display-case-img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 800px;
+  margin: auto;
 }
 
 .display-case-exhibit:hover {
@@ -98,5 +115,10 @@
 }
 
 h2.display-case-title {
-  font-size: 27px;
+  font-family: var(--_27-font-family);
+  font-size: var(--_27-font-size);
+  font-style: var(--_27-font-style);
+  font-weight: var(--_27-font-weight);
+  line-height: var(--_27-line-height);
+  letter-spacing: var(--_27-letter-spacing);
 }

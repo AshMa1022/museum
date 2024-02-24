@@ -158,3 +158,14 @@
     column-count: 1;
   }
 }
+
+.caption {
+  margin-top: 6px;
+  text-align: right;
+  color: #848484;
+  font-family: var(--_13-font-family);
+  font-size: var(--_13-font-size);
+  font-style: var(--_13-font-style);
+  font-weight: var(--_13-font-weight);
+  line-height: var(--_13-line-height);
+}

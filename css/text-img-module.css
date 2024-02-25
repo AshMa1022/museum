@@ -162,6 +162,18 @@
     margin-bottom: 2em;
     flex-direction: row;
   }
+
+  .text-img-module .col-2-1 {
+    flex: none;
+    min-width: auto;
+    width: 100%;
+  }
+
+  .text-img-module .col2 {
+    margin-bottom: 2em;
+    flex-direction: row;
+  }
+
   .text-img-module p {
     margin-bottom: 1em;
   }

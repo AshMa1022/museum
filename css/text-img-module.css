@@ -1,6 +1,7 @@
 :root{
   --column-gap-between-colums: 35px;
   --column-gap-between-imgs: 35px;
+  --column-gap-between-colums-2columns: 120px;
 }
 
 /* CSS for Text Image Module */
@@ -64,6 +65,16 @@
 }
 .text-img-module .col-3-2 {
   flex: 2;
+}
+
+/* 2 column layout */
+.text-img-module .col2 {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: var(--column-gap-between-colums-2columns);
+}
+.text-img-module .col-2-1 {
+  flex: 1;
 }
 
 /* Image Horizontal Stack */
@@ -157,15 +168,4 @@
   .text-img-module .text-col2 {
     column-count: 1;
   }
-}
-
-.caption {
-  margin-top: 6px;
-  text-align: right;
-  color: #848484;
-  font-family: var(--_13-font-family);
-  font-size: var(--_13-font-size);
-  font-style: var(--_13-font-style);
-  font-weight: var(--_13-font-weight);
-  line-height: var(--_13-line-height);
 }

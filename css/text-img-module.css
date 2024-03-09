@@ -115,6 +115,21 @@
   width: 500px;
   overflow: hidden;
 }
+.text-img-module .img-70-wrapper {
+  overflow: hidden;
+  justify-content: right;
+  display: flex;
+  align-items: flex-start;
+}
+.text-img-module .img-70-wrapper img{
+  max-width: 70%;
+}
+.text-img-module .img-single-wrapper{
+  height: 100vh;
+}
+.text-img-module .img-single-wrapper img{
+  object-fit: contain;
+}
 
 /* Image with caption */
 .text-img-module .img-with-caption {

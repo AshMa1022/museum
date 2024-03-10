@@ -151,6 +151,14 @@
 }
 
 
+/* Masonry Layout */
+.text-img-module .masonry{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: var(--column-gap-between-imgs);
+}
+
+
 /* Responsive Styles for Tablets */
 @media only screen and (max-width: 1048px) {
   .text-img-module .img-500-wrapper {

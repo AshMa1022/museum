@@ -12,6 +12,7 @@
 .banner .img-wrapper {
   height: 100%;
   overflow: hidden;
+  max-height: 308px;
 }
 .banner img {
   width: 100%;

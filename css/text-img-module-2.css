@@ -59,6 +59,14 @@
   flex: 1;
 }
 
+.col-1-image {
+  flex: 1;
+}
+
+.col-1-image-with-caption {
+  width: fit-content;
+}
+
 .col-2-image {
   flex: 2;
 }

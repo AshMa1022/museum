@@ -8,16 +8,6 @@
   display: none !important;
 }
 
-body {
-  margin: 0;
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  color: #fff;
-  line-height: normal;
-  letter-spacing: normal;
-}
-
 .text-container {
   text-align: center;
   font-family: var(--_27-font-family);

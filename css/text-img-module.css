@@ -150,12 +150,14 @@
   line-height: var(--_13-line-height);
 }
 
-
 /* Masonry Layout */
 .text-img-module .masonry{
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: var(--column-gap-between-imgs);
+  columns: 300px auto;
+  column-gap: var(--column-gap-between-imgs);
+}
+
+.text-img-module .masonry img{
+  margin-bottom: var(--column-gap-between-imgs);
 }
 
 

@@ -58,7 +58,9 @@
 }
 
 .swiper-next-button,
-.swiper-prev-button {
+.swiper-prev-button,
+.swiper-prev-button3,
+.swiper-next-button3 {
   position: absolute;
   top: 50%;
   width: 30px;
@@ -68,11 +70,13 @@
   cursor: pointer;
 }
 
-.swiper-next-button {
+.swiper-next-button,
+.swiper-next-button3 {
   right: 100px !important;
 }
 
-.swiper-prev-button {
+.swiper-prev-button,
+.swiper-prev-button3 {
   left: 100px !important;
 }
 
@@ -80,25 +84,29 @@
   font-size: 68px !important;
 }
 
-.mySwiper2 {
+.mySwiper2,
+.mySwiper4 {
   height: 20%;
   box-sizing: border-box;
   padding: 10px 0;
   transform: scale(0.8);
 }
 
-.mySwiper2 .swiper-slide {
+.mySwiper2 .swiper-slide,
+.mySwiper4 .swiper-slide {
   width: 25%;
   height: 100%;
   opacity: 0.4;
   padding-top: 0px !important;
 }
 
-.mySwiper2 .swiper-slide-thumb-active {
+.mySwiper2 .swiper-slide-thumb-active,
+.mySwiper4 .swiper-slide-thumb-active {
   opacity: 1;
 }
 
-.mySwiper2 img {
+.mySwiper2 img,
+.mySwiper4 img {
   display: block;
   object-fit: cover;
   width: 100%;
@@ -108,7 +116,9 @@
 }
 
 .swiper-next-button2,
-.swiper-prev-button2 {
+.swiper-prev-button2,
+.swiper-next-button4,
+.swiper-prev-button4 {
   position: absolute;
   top: 50%;
   width: 30px;
@@ -118,14 +128,16 @@
   cursor: pointer;
 }
 
-.swiper-next-button2 {
+.swiper-next-button2,
+.swiper-next-button4 {
   align-items: center;
   display: flex;
   flex-direction: row-reverse;
   right: 10px !important;
 }
 
-.swiper-prev-button2 {
+.swiper-prev-button2,
+.swiper-prev-button4 {
   left: 10px !important;
   display: flex;
   align-items: center;

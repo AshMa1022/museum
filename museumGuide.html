@@ -2,53 +2,51 @@
   展览导航page，每个展厅的profile，图片、文字和对应展厅page的href
 -->
 <!DOCTYPE html>
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>打工文化艺术博物馆</title>
-    <link rel="icon" href="images/icon.svg">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" type="text/css" href="./css/breadcrumb.css">
-    <link rel="stylesheet" type="text/css" href="./css/guide.css">
-    <link rel="stylesheet" type="text/css" href="./css/font.css">
+    <link rel="icon" href="images/icon.svg" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="./css/breadcrumb.css" />
+    <link rel="stylesheet" type="text/css" href="./css/guide.css" />
+    <link rel="stylesheet" type="text/css" href="./css/font.css" />
     <style>
       body {
-
         box-sizing: border-box;
       }
 
-      body,html {
+      body,
+      html {
         margin: 0;
         padding: 0;
       }
 
       iframe {
-      border: none;
-    }
+        border: none;
+      }
 
-    /* 遮罩层，用于覆盖页面以显示视频 */
-    .overlay {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.8);
-      align-items: center;
-      justify-content: center;
-    }
-
+      /* 遮罩层，用于覆盖页面以显示视频 */
+      .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        align-items: center;
+        justify-content: center;
+      }
     </style>
   </head>
 
   <body>
-
     <div id="headerContainer"></div>
 
     <main>
-
       <!--crumbs-->
       <!--
       <div class="crums">
@@ -62,19 +60,15 @@
 
     -->
 
-    <div class="crums" style="margin-left: 8px; margin-right: 8px">
-      <div class="rectangle-31"></div>
-      <div class="crums-address">
-        <span class="crums-address-span">当前位置：</span>
-        <a href="index.html" class="crums-address-span2"
-          ><u>首页</u></a>
+      <div class="crums" style="margin-left: 8px; margin-right: 8px">
+        <div class="rectangle-31"></div>
+        <div class="crums-address">
+          <span class="crums-address-span">当前位置：</span>
+          <a href="index.html" class="crums-address-span2"><u>首页</u></a>
           <span>&nbsp;/&nbsp;</span>
-        <a class="crums-address-span4"
-          >展厅导航</a>
+          <a class="crums-address-span4">展厅导航</a>
+        </div>
       </div>
-    </div>
-
-
 
       <!--preface-->
       <div class="two-part">
@@ -84,29 +78,48 @@
             <p>
               改革开放三十年来，中国的工业化、城市化、经济建设飞速发展，这其中离不开我们亿万打工兄弟姐妹们所付出的劳动和贡献。从乡村到城市，流动打工群体是城乡的纽带和桥梁、是推动中国社会前进的新型劳动大军、是中华民族的脊梁。
             </p>
-              
-              <p>
-                我们希望通过打工文化艺术博物馆来记录和反映我们劳动者自己的文化和历史。因为，没有我们的文化就没有我们的历史，没有我们的历史就没有我们的将来。
-              </p>
-              
-              <p>
-                这也正是我们创办打工文化艺术博物馆和举办这次展览的目的——纪录打工群体的历史变迁，倡导劳动价值的尊重认可。
-              </p>
 
-              <p>
-                打工文化艺术博物馆 2008年5月1日
-              </p>   
+            <p>
+              我们希望通过打工文化艺术博物馆来记录和反映我们劳动者自己的文化和历史。因为，没有我们的文化就没有我们的历史，没有我们的历史就没有我们的将来。
+            </p>
+
+            <p>
+              这也正是我们创办打工文化艺术博物馆和举办这次展览的目的——纪录打工群体的历史变迁，倡导劳动价值的尊重认可。
+            </p>
+
+            <p>打工文化艺术博物馆 2008年5月1日</p>
           </div>
-  
         </div>
 
         <div class="video-background">
           <a class="glightbox_video" href="#" id="playButton">
-            <svg width="131" height="131" viewBox="0 0 131 131" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path class="inner-circle" d="M65 21C40.1488 21 20 41.1488 20 66C20 90.8512 40.1488 111 65 111C89.8512 111 110 90.8512 110 66C110 41.1488 89.8512 21 65 21Z" fill="white"></path>
-            <circle class="outer_circle" cx="65.5" cy="65.5" r="64" stroke="white"></circle>
-            <path class="play" fill-rule="evenodd" clip-rule="evenodd" d="M60 76V57L77 66.7774L60 76Z" fill="#BF2428"></path>
-          </svg>
+            <svg
+              width="131"
+              height="131"
+              viewBox="0 0 131 131"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                class="inner-circle"
+                d="M65 21C40.1488 21 20 41.1488 20 66C20 90.8512 40.1488 111 65 111C89.8512 111 110 90.8512 110 66C110 41.1488 89.8512 21 65 21Z"
+                fill="white"
+              ></path>
+              <circle
+                class="outer_circle"
+                cx="65.5"
+                cy="65.5"
+                r="64"
+                stroke="white"
+              ></circle>
+              <path
+                class="play"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M60 76V57L77 66.7774L60 76Z"
+                fill="#BF2428"
+              ></path>
+            </svg>
           </a>
           <div class="overlay" id="videoOverlay">
             <iframe
@@ -118,77 +131,123 @@
               allowfullscreen
             ></iframe>
           </div>
-        
         </div>
       </div>
 
       <div class="guide">
         <h2 class="guide-title">展厅导览</h2>
-        
-        <div class="gallerys-container">
 
+        <div class="gallerys-container">
           <!--gallery 1-->
-          <a href="gallery1Module1.html" style=" text-decoration: none;">
+          <a href="gallery1Module1.html" style="text-decoration: none">
             <div class="gallery">
               <div class="gallery-title">
                 流动的历史
-                <svg width="11" height="17" viewBox="0 0 11 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.81324 9.06344L3.13267 15.5151C2.81047 15.8262 2.28811 15.8262 1.96595 15.5151L1.18677 14.7626C0.865122 14.452 0.864503 13.9485 1.18539 13.6372L6.47987 8.50005L1.18539 3.36297C0.864503 3.05161 0.865122 2.54818 1.18677 2.23755L1.96595 1.48508C2.28814 1.17392 2.81051 1.17392 3.13267 1.48508L9.81321 7.9367C10.1354 8.24782 10.1354 8.75228 9.81324 9.06344Z" fill="white"/>
+                <svg
+                  width="11"
+                  height="17"
+                  viewBox="0 0 11 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.81324 9.06344L3.13267 15.5151C2.81047 15.8262 2.28811 15.8262 1.96595 15.5151L1.18677 14.7626C0.865122 14.452 0.864503 13.9485 1.18539 13.6372L6.47987 8.50005L1.18539 3.36297C0.864503 3.05161 0.865122 2.54818 1.18677 2.23755L1.96595 1.48508C2.28814 1.17392 2.81051 1.17392 3.13267 1.48508L9.81321 7.9367C10.1354 8.24782 10.1354 8.75228 9.81324 9.06344Z"
+                    fill="white"
+                  />
                 </svg>
               </div>
-    
+
               <div class="gallery-border">
-                <div style="position: relative;">
-                  <img src="images/guide-gallery1.jpg.png" class="gallery-img first-img" style="position: absolute;">
-                  <img src="images/guide-gallery1-hover.jpg.png" class="gallery-img second-image">
+                <div style="position: relative">
+                  <img
+                    src="images/guide-gallery1.jpg.png"
+                    class="gallery-img first-img"
+                    style="position: absolute"
+                  />
+                  <img
+                    src="images/guide-gallery1-hover.jpg.png"
+                    class="gallery-img second-image"
+                  />
                 </div>
-                
-              <div class="gallery-intro">
-                纵向了解我们的打工群体改革开放三十多年来的形成和发展历程，工友们工作、生活的方方面面以及这一阶段发生的重大事件，感受打工生活的艰辛，分享工友们的情感和诉求
+
+                <div class="gallery-intro">
+                  纵向了解我们的打工群体改革开放三十多年来的形成和发展历程，工友们工作、生活的方方面面以及这一阶段发生的重大事件，感受打工生活的艰辛，分享工友们的情感和诉求
+                </div>
               </div>
-            </div>
             </div>
           </a>
 
           <!--gallery 2-->
-          <a href="gallery2.html" style=" text-decoration: none;">
+          <a href="gallery2.html" style="text-decoration: none">
             <div class="gallery">
               <div class="gallery-title">
                 女工
-                <svg width="11" height="17" viewBox="0 0 11 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.81324 9.06344L3.13267 15.5151C2.81047 15.8262 2.28811 15.8262 1.96595 15.5151L1.18677 14.7626C0.865122 14.452 0.864503 13.9485 1.18539 13.6372L6.47987 8.50005L1.18539 3.36297C0.864503 3.05161 0.865122 2.54818 1.18677 2.23755L1.96595 1.48508C2.28814 1.17392 2.81051 1.17392 3.13267 1.48508L9.81321 7.9367C10.1354 8.24782 10.1354 8.75228 9.81324 9.06344Z" fill="white"/>
+                <svg
+                  width="11"
+                  height="17"
+                  viewBox="0 0 11 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.81324 9.06344L3.13267 15.5151C2.81047 15.8262 2.28811 15.8262 1.96595 15.5151L1.18677 14.7626C0.865122 14.452 0.864503 13.9485 1.18539 13.6372L6.47987 8.50005L1.18539 3.36297C0.864503 3.05161 0.865122 2.54818 1.18677 2.23755L1.96595 1.48508C2.28814 1.17392 2.81051 1.17392 3.13267 1.48508L9.81321 7.9367C10.1354 8.24782 10.1354 8.75228 9.81324 9.06344Z"
+                    fill="white"
+                  />
                 </svg>
               </div>
-    
+
               <div class="gallery-border">
-                <div style="position: relative;">
-                  <img src="images/guide-gallery2.png" class="gallery-img first-img" style="position: absolute;">
-                  <img src="images/guide-gallery2-hover.png" class="gallery-img second-image">
+                <div style="position: relative">
+                  <img
+                    src="images/guide-gallery2.png"
+                    class="gallery-img first-img"
+                    style="position: absolute"
+                  />
+                  <img
+                    src="images/guide-gallery2-hover.png"
+                    class="gallery-img second-image"
+                  />
                 </div>
-                
-              <div class="gallery-intro">
-                女性打工者由于生理和心理的性别特点，使得她们的整体性格较为脆弱、内敛，忍耐力较强，抗争意识较弱，而且整体教育文化水平较低，因此用人单位普遍愿意招收女工，不仅付给的工资比男工低，而且还易于管理，甚至很多老板和管理人员对女工进行身体和语言的性骚扰
+
+                <div class="gallery-intro">
+                  女性打工者由于生理和心理的性别特点，使得她们的整体性格较为脆弱、内敛，忍耐力较强，抗争意识较弱，而且整体教育文化水平较低，因此用人单位普遍愿意招收女工，不仅付给的工资比男工低，而且还易于管理，甚至很多老板和管理人员对女工进行身体和语言的性骚扰
+                </div>
               </div>
-            </div>
             </div>
           </a>
 
           <!--gallery 3-->
-          <a href="gallery3Module1.html" style=" text-decoration: none;">
+          <a href="gallery3Module1.html" style="text-decoration: none">
             <div class="gallery">
               <div class="gallery-title">
                 儿童
-                <svg width="11" height="17" viewBox="0 0 11 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.81324 9.06344L3.13267 15.5151C2.81047 15.8262 2.28811 15.8262 1.96595 15.5151L1.18677 14.7626C0.865122 14.452 0.864503 13.9485 1.18539 13.6372L6.47987 8.50005L1.18539 3.36297C0.864503 3.05161 0.865122 2.54818 1.18677 2.23755L1.96595 1.48508C2.28814 1.17392 2.81051 1.17392 3.13267 1.48508L9.81321 7.9367C10.1354 8.24782 10.1354 8.75228 9.81324 9.06344Z" fill="white"/>
+                <svg
+                  width="11"
+                  height="17"
+                  viewBox="0 0 11 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.81324 9.06344L3.13267 15.5151C2.81047 15.8262 2.28811 15.8262 1.96595 15.5151L1.18677 14.7626C0.865122 14.452 0.864503 13.9485 1.18539 13.6372L6.47987 8.50005L1.18539 3.36297C0.864503 3.05161 0.865122 2.54818 1.18677 2.23755L1.96595 1.48508C2.28814 1.17392 2.81051 1.17392 3.13267 1.48508L9.81321 7.9367C10.1354 8.24782 10.1354 8.75228 9.81324 9.06344Z"
+                    fill="white"
+                  />
                 </svg>
               </div>
-    
-                <div class="gallery-border">
-                  <div style="position: relative;">
-                    <img src="images/guide-gallery3.png" class="gallery-img first-img" style="position: absolute;">
-                    <img src="images/guide-gallery3-hover.jpg.png" class="gallery-img second-image">
-                  </div>
-                  
+
+              <div class="gallery-border">
+                <div style="position: relative">
+                  <img
+                    src="images/guide-gallery3.png"
+                    class="gallery-img first-img"
+                    style="position: absolute"
+                  />
+                  <img
+                    src="images/guide-gallery3-hover.jpg.png"
+                    class="gallery-img second-image"
+                  />
+                </div>
+
                 <div class="gallery-intro">
                   打工工友的孩子分为留守儿童和流动儿童。目前全国共有6000多万跟随祖父母在农村老家上学的留守儿童和3000多万跟随父母在父母务工地上学的流动儿童。仅北京每10个孩子中就有3个是流动儿童
                 </div>
@@ -197,29 +256,43 @@
           </a>
 
           <!--gallery 4-->
-          <a href="gallery4.html" style=" text-decoration: none;">
+          <a href="gallery4.html" style="text-decoration: none">
             <div class="gallery">
               <div class="gallery-title">
                 NGO
-                <svg width="11" height="17" viewBox="0 0 11 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.81324 9.06344L3.13267 15.5151C2.81047 15.8262 2.28811 15.8262 1.96595 15.5151L1.18677 14.7626C0.865122 14.452 0.864503 13.9485 1.18539 13.6372L6.47987 8.50005L1.18539 3.36297C0.864503 3.05161 0.865122 2.54818 1.18677 2.23755L1.96595 1.48508C2.28814 1.17392 2.81051 1.17392 3.13267 1.48508L9.81321 7.9367C10.1354 8.24782 10.1354 8.75228 9.81324 9.06344Z" fill="white"/>
+                <svg
+                  width="11"
+                  height="17"
+                  viewBox="0 0 11 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.81324 9.06344L3.13267 15.5151C2.81047 15.8262 2.28811 15.8262 1.96595 15.5151L1.18677 14.7626C0.865122 14.452 0.864503 13.9485 1.18539 13.6372L6.47987 8.50005L1.18539 3.36297C0.864503 3.05161 0.865122 2.54818 1.18677 2.23755L1.96595 1.48508C2.28814 1.17392 2.81051 1.17392 3.13267 1.48508L9.81321 7.9367C10.1354 8.24782 10.1354 8.75228 9.81324 9.06344Z"
+                    fill="white"
+                  />
                 </svg>
               </div>
-    
+
               <div class="gallery-border">
-                <div style="position: relative;">
-                  <img src="images/guide-gallery4.png" class="gallery-img first-img" style="position: absolute;">
-                  <img src="images/guide-gallery4-hover.jpg.png" class="gallery-img second-image">
+                <div style="position: relative">
+                  <img
+                    src="images/guide-gallery4.png"
+                    class="gallery-img first-img"
+                    style="position: absolute"
+                  />
+                  <img
+                    src="images/guide-gallery4-hover.jpg.png"
+                    class="gallery-img second-image"
+                  />
                 </div>
-                
-              <div class="gallery-intro">
-                NGO作为民间公益组织发挥着社会服务的作用，是对政府职能的有益补充
+
+                <div class="gallery-intro">
+                  NGO作为民间公益组织发挥着社会服务的作用，是对政府职能的有益补充
+                </div>
               </div>
             </div>
-            </div>
           </a>
-          
-          
         </div>
       </div>
     </main>
@@ -227,25 +300,25 @@
     <div id="footerContainer"></div>
 
     <script src="js/videoplay.js"></script>
-   
+
     <script>
       // Use fetch to load the header content
-      fetch("header.html")
+      fetch('header.html')
         .then((response) => response.text())
         .then((html) => {
-          document.getElementById("headerContainer").innerHTML = html;
+          document.getElementById('headerContainer').innerHTML = html;
         });
     </script>
     <script>
       // Use fetch to load the footer content
-      fetch("footer.html")
+      fetch('footer.html')
         .then((response) => response.text())
         .then((html) => {
-          document.getElementById("footerContainer").innerHTML = html;
+          document.getElementById('footerContainer').innerHTML = html;
         });
     </script>
 
+    <!--sidebar for mobile-->
+    <script src="./js/sidebar.js"></script>
   </body>
 </html>
-
-

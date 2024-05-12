@@ -4,15 +4,21 @@
 }
 
 @font-face {
-  font-family: "SourceHanSerifCn-Bold";
-  src: url("../fonts/SourceHanSerifCN-VF.otf.woff2") format("woff2"),
-    /* Super Modern Browsers */ url("../fonts/SourceHanSerifSC-VF.ttf")
-      format("truetype"); /* Safari, Android, iOS */
+  font-family: 'SourceHanSerifCn-Bold';
+  src: url('../fonts/SourceHanSerifCN-VF.otf.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('../fonts/SourceHanSerifSC-VF.ttf')
+      format('truetype'); /* Safari, Android, iOS */
 }
 
 @font-face {
-  font-family: "SourceSans3-Regular";
-  src: url("../fonts/NotoSansSC-VariableFont_wght.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-family: 'SourceSans3-Regular';
+  src: url('../fonts/NotoSansSC-VariableFont_wght.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+.main-header,
+.main-nav,
+.search_box {
+  display: flex;
 }
 
 .main-header {
@@ -96,11 +102,11 @@
 
 .submenu::after,
 .submenu::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   height: 100%;
-  width: 20px; /* 调整左右扩展的宽度，可以根据需要调整 */
+  width: 20px; /* 调整左右扩展的宽度 */
   background-color: #ffffff;
 }
 
@@ -192,12 +198,7 @@
 
 /* media queries */
 
-@media (min-width: 769px) {
-  .main-header,
-  .main-nav,
-  .search_box {
-    display: flex;
-  }
+/* @media (min-width: 769px) {
   .main-header {
     flex-direction: column;
     align-items: center;
@@ -207,11 +208,90 @@
       max-width: 1150px;
     }
   }
-}
+} */
 
-@media (min-width: 1025px) {
+/* @media (min-width: 1025px) {
   .main-header {
-    flex-direction: row;
     justify-content: space-between;
   }
+} */
+
+.sidebar-toggle {
+  display: none; /* 初始隐藏 */
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  width: 30px; /* 按钮宽度 */
+  height: 30px; /* 按钮高度 */
+}
+
+/* 侧边栏下拉菜单样式 */
+.mobile-menu {
+  display: none; /* 初始隐藏 */
+}
+
+@media (max-width: 870px) {
+  .main-header {
+    justify-content: space-between;
+  }
+  .main-nav {
+    display: none;
+  }
+
+  .search-box {
+    display: none;
+  }
+
+  .sidebar-toggle {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    height: calc(100vh - 100%);
+    overflow-y: auto;
+  }
+  .bar-item {
+    font-family: var(--_17-font-family);
+    line-height: 26px;
+    font-weight: 700;
+    font-size: 17px;
+    /* letter-spacing: 0.85px; */
+    display: block;
+    padding: 8px 0px;
+    color: #000000;
+    background: white;
+    border: none;
+    white-space: normal;
+    float: none;
+    outline: 0;
+    text-decoration: none;
+    overflow: hidden;
+    border-bottom: 1px solid;
+    border-color: #dadee7;
+  }
+}
+
+.mobile-sub-menu-button {
+  background-color: #2b2631;
+  border-bottom: 1px solid;
+  border-color: #363b49;
+  transition: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+  padding: 8px 0px;
+}
+
+.mobile-sub-menu-button a {
+  color: #fff;
+  text-decoration: none;
 }

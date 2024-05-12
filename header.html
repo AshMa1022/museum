@@ -41,6 +41,66 @@
     </nav>
   </div>
 
+  <!-- 侧边栏-->
+  <div class="mobile-menu" id="mySidebar" style="display: none">
+    <button onclick="sidebar_close()" class="bar-item" style="width: 100%">
+      关闭
+    </button>
+
+    <details>
+      <summary class="bar-item" style="display: list-item">流动的历史</summary>
+      <div>
+        <div class="mobile-sub-menu-button">
+          <a href="gallery1Module1.html">建国初期</a>
+        </div>
+        <div class="mobile-sub-menu-button">
+          <a href="gallery1Module2.html">农村改革</a>
+        </div>
+        <div class="mobile-sub-menu-button">
+          <a href="gallery1Module3.html">离土不离乡</a>
+        </div>
+        <div class="mobile-sub-menu-button">
+          <a href="gallery1Module4.html">务工潮出现</a>
+        </div>
+        <div class="mobile-sub-menu-button">
+          <a href="gallery1Module5.html">管理制度</a>
+        </div>
+        <div class="mobile-sub-menu-button">
+          <a href="gallery1Module6-1.html">艰辛生活</a>
+        </div>
+        <div class="mobile-sub-menu-button">
+          <a href="gallery1Module7.html">NGO诞生</a>
+        </div>
+        <div class="mobile-sub-menu-button">
+          <a href="gallery1Module8.html">政策调整</a>
+        </div>
+      </div>
+    </details>
+
+    <a href="gallery2Module1.html" class="bar-item">女工展厅</a>
+
+    <a href="gallery3Module1.html" class="bar-item">儿童展厅</a>
+
+    <a href="gallery4.html" class="bar-item">NGO展厅</a>
+  </div>
+
+  <div class="sidebar-toggle">
+    <button
+      class="toggle-btn"
+      aria-label="Toggle Navigation Menu"
+      onclick="sidebar_open()"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        width="24"
+        height="24"
+      >
+        <path fill="#222" d="M0 3h24v2H0V3zm0 8h24v2H0v-2zm0 8h24v2H0v-2z" />
+      </svg>
+    </button>
+  </div>
+
   <!--搜索功能待开发-->
   <div class="search-box">
     <input type="text" class="search-txt" placeholder="请输入搜索内容..." />

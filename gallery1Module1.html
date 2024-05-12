@@ -22,7 +22,7 @@
     <link rel="stylesheet" type="text/css" href="./css/fullpageview.css" />
     <style>
       .cover-image {
-        background-image: url("../images/gallery1/1-1-集体化.png");
+        background-image: url('../images/gallery1/1-1-集体化.png');
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
@@ -75,7 +75,18 @@
         <div class="content">
           <div class="canva">
             <h2>打工三十年 · 流动的历史</h2>
-            <img src="images/entrance-4.png" />
+            <div
+              style="
+                display: flex;
+                align-content: center;
+                justify-content: center;
+              "
+            >
+              <img
+                src="images/gallery1/1-1-看板.png"
+                style="max-width: 80%; align-items: center"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -435,20 +446,24 @@
     <script src="js/parallax.js"></script>
     <script>
       // Use fetch to load the header content
-      fetch("header.html")
+      fetch('header.html')
         .then((response) => response.text())
         .then((html) => {
-          document.getElementById("headerContainer").innerHTML = html;
+          document.getElementById('headerContainer').innerHTML = html;
         });
     </script>
     <script>
       // Use fetch to load the footer content
-      fetch("footer.html")
+      fetch('footer.html')
         .then((response) => response.text())
         .then((html) => {
-          document.getElementById("footerContainer").innerHTML = html;
+          document.getElementById('footerContainer').innerHTML = html;
         });
     </script>
+
     <script src="./js/fullpageview.js"></script>
+
+    <!--sidebar for mobile-->
+    <script src="./js/sidebar.js"></script>
   </body>
 </html>

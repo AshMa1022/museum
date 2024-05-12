@@ -142,3 +142,12 @@
   display: flex;
   align-items: center;
 }
+
+.thumb-fit {
+  object-fit: fill !important;
+}
+
+.thumb-size {
+  height: 200px !important;
+  /* width: 270px !important; */
+}

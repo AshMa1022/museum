@@ -144,6 +144,7 @@
 }
 
 .thumb-fit {
+  cursor: pointer;
   object-fit: fill !important;
 }
 

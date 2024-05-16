@@ -19,6 +19,6 @@
   top: 0;
 }
 
-img {
+.img-container img:not(.halftone), .text-img-module img:not(.halftone), .center-single-image img:not(.halftone), .module-type1 img:not(.halftone) {
   cursor: pointer;
 }

@@ -1,4 +1,4 @@
-const imgs = document.querySelectorAll('.img-container img, .text-img-module img, .center-single-image img, .module-type1 img');
+const imgs = document.querySelectorAll('.img-container img:not(.halftone), .text-img-module img:not(.halftone), .center-single-image img:not(.halftone), .module-type1 img:not(.halftone)');
 const fullPage = document.querySelector('#fullpage');
 fullPage.innerHTML += `
 <button id="fullpage-closebutton" onclick="parent.style.display='none'">

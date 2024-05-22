@@ -178,13 +178,56 @@
 
 @media (max-width: 1035px) {
   .module-type1 {
-    flex-direction: column; /* 切换为上下布局 */
-    height: auto; /* 自适应高度 */
+    flex-direction: column;
+    height: auto;
     align-items: center;
+    margin-bottom: 80px;
   }
 
   .module-type1 img {
     max-height: 500px;
     object-fit: contain;
+  }
+
+  .body-text.callout {
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 50px;
+  }
+
+  .gallery1-img-2 {
+    row-gap: 25px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .body-text {
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 50px;
+  }
+
+  .col-2-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-img-module h2 {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .align-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 540px) {
+  .gallery1-img-2 {
+    flex-direction: column;
   }
 }

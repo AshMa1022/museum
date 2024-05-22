@@ -190,7 +190,7 @@
   }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 912px) {
   .gallerys-container {
     grid-template-columns: 1fr; /* 在屏幕宽度小于 860px 时变为单列布局 */
   }

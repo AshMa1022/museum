@@ -4,15 +4,15 @@
 }
 
 @font-face {
-  font-family: "SourceHanSerifCn-Bold";
-  src: url("../fonts/SourceHanSerifCN-VF.otf.woff2") format("woff2"),
-    /* Super Modern Browsers */ url("../fonts/SourceHanSerifSC-VF.ttf")
-      format("truetype"); /* Safari, Android, iOS */
+  font-family: 'SourceHanSerifCn-Bold';
+  src: url('../fonts/SourceHanSerifCN-VF.otf.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('../fonts/SourceHanSerifSC-VF.ttf')
+      format('truetype'); /* Safari, Android, iOS */
 }
 
 @font-face {
-  font-family: "SourceSans3-Regular";
-  src: url("../fonts/NotoSansSC-VariableFont_wght.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-family: 'SourceSans3-Regular';
+  src: url('../fonts/NotoSansSC-VariableFont_wght.ttf') format('truetype'); /* Safari, Android, iOS */
 }
 
 .main-footer {
@@ -76,10 +76,15 @@
 
 /* media query */
 
-@media (max-width: 500px) {
+@media (max-width: 880px) {
   .footer-container {
-    flex-direction: column; /* 切换为上下布局 */
+    /* flex-direction: column; */
     align-items: center;
-    justify-content: center; /* 在主轴上居中 */
+    height: auto;
+    justify-content: center;
+  }
+
+  .footer-container > div:nth-child(2) {
+    flex-wrap: wrap;
   }
 }

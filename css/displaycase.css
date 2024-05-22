@@ -31,7 +31,7 @@
   row-gap: 21px;
   justify-items: center;
   padding-bottom: 19px;
-  max-width: 1200px; 
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   width: 80%;
@@ -120,4 +120,16 @@ h2.display-case-title {
   font-weight: var(--_27-font-weight);
   line-height: var(--_27-line-height);
   letter-spacing: var(--_27-letter-spacing);
+}
+
+@media (max-width: 1024px) {
+  .display-case {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 540px) {
+  .display-case {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

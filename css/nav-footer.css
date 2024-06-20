@@ -55,3 +55,25 @@
 .nav-footer a {
   text-decoration: none;
 }
+
+@media (max-width: 540px) {
+  .nav-footer {
+    margin-top: 71px;
+    flex-direction: column;
+  }
+
+  .nav-footer .nav-btn {
+    width: 100%;
+  }
+
+  .nav-footer .current-page {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .nav-footer {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}

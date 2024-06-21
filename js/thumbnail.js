@@ -1,15 +1,21 @@
 var swiper2 = new Swiper('.mySwiper2', {
   spaceBetween: 10,
-  slidesPerView: 5,
-  slidesPerGroup: 5,
   watchSlidesProgress: true,
+  breakpoints: {
+    0: {
+      slidesPerView: 3,
+    },
+    1030: {
+      slidesPerView: 5,
+      slidesPerGroup: 3,
+    },
+  },
 });
 
 var swiper = new Swiper('.mySwiper', {
   effect: 'coverflow',
   grabCursor: true,
   centeredSlides: true,
-  slidesPerView: 3,
   loop: true,
   spaceBetween: 0,
   coverflowEffect: {
@@ -17,6 +23,14 @@ var swiper = new Swiper('.mySwiper', {
     depth: 20,
     modifier: 1,
     slideShadows: false,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
   },
   pagination: {
     el: '.swiper-pagination',

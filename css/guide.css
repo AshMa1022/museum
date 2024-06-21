@@ -6,6 +6,14 @@
   box-sizing: border-box;
 }
 
+.intro-right:hover {
+  background-color: #b20000; /* 悬停时的背景颜色 */
+}
+
+.intro-right:hover p {
+  color: white;
+}
+
 .text-area {
   display: flex;
   flex-direction: column;

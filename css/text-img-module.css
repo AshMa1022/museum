@@ -210,7 +210,7 @@
   }
 
   .text-img-module p {
-    margin-bottom: 1em;
+    /* margin-bottom: 1em; */
   }
   .text-img-module .text-col2 {
     column-count: 1;
